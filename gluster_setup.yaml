@@ -7,24 +7,24 @@
   # Pull in access and secret keys, be sure to run ansible-playbook with
   # --ask-vault-pass, see README.md for more information
   vars_files:
-  - vars.yaml
-  #tasks:
-  # Create the cluster's VPC
-  - include: create_vpc.yaml
+    - vars.yaml
 
-  # Set up security groups for the VPC
-  - include: create_security_groups.yaml
-    vars:
-      vpc_id: "{{ vpc.vpc_id }}"
 
-  # Create Route 53 entries
-  - include: create_route53.yaml
+- include: create_vpc.yaml
 
-  # Create Gluster nodes
-  - include: create_nodes.yaml
-    vars:
-      vpc_subnet_id_a: "{{ vpc.subnets.0.id }}"
-      vpc_subnet_id_b: "{{ vpc.subnets.1.id }}"
+# Set up security groups for the VPC
+- include: create_security_groups.yaml
+  vars:
+    vpc_id: "{{ vpc.vpc_id }}"
 
-  # Install and configure Gluster
-  - include: install_gluster.yaml
+# Create Route 53 entries
+- include: create_route53.yaml
+
+# Create Gluster nodes
+- include: create_nodes.yaml
+  vars:
+    vpc_subnet_id_a: "{{ vpc.subnets.0.id }}"
+    vpc_subnet_id_b: "{{ vpc.subnets.1.id }}"
+
+# Install and configure Gluster
+- include: install_gluster.yaml

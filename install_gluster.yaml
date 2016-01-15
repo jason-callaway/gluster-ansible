@@ -5,39 +5,39 @@
   remote_user: ec2-user
   gather_facts: no
   connection: local
-  sudo: yes
+  become: yes
+  vars_files:
+    - vars.yaml
   vars:
   - gluster_brick: /bricks/brick1
   - gluster_volume: gv0
   - gluster_replicas: 2
   tasks:
-  - name: Fetch glusterfs repo file
-    get_url: dest=/etc/yum.repos.d/glusterfs-epel.repo
-             url=http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-epel.repo
+    - name: Fetch glusterfs repo file
+      get_url: dest=/etc/yum.repos.d/glusterfs-epel.repo
+               url=http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-epel.repo
 
-  - name: Set repo file permissions
-    file: owner=root group=root mode=0644
-          path=/etc/yum.repos.d/glusterfs-epel.repo
+    - name: Set repo file permissions
+      file: owner=root group=root mode=0644
+            path=/etc/yum.repos.d/glusterfs-epel.repo
 
-  - name: Install glusterfs server packages (CentOS)
-    yum: name={{ item }} state=installed enablerepo="glusterfs-epel"
-    with_items:
-      - glusterfs-server
-      - glusterfs-client
-      - attr
+    - name: Install glusterfs server packages (CentOS)
+      yum: name={{ item }} state=installed enablerepo="glusterfs-epel"
+      with_items:
+        - glusterfs-server
+        - glusterfs-client
+        - attr
 
-  - name: Ensure the GlusterFS service is running (CentOS)
-    service: name=glusterd state=started
+    - name: Ensure the GlusterFS service is running (CentOS)
+      service: name=glusterd state=started
 
-#    - name: Create Gluster volume
-#      gluster_volume: bricks={{ gluster_brick }} force=true
-#                      cluster={{ groups.storage_nodes | join(',')}}
-#                      replicas={{ gluster_replicas }} name={{ gluster_volume }}
-#                      state=present
-#      run_once: true
-#
-#    - name: Start Gluster volume
-#      gluster_volume: name={{gluster_volume}} state=started
+  #    - name: Create Gluster volume
+  #      gluster_volume: bricks={{ gluster_brick }} force=true
+  #                      cluster={{ groups.storage_nodes | join(',')}}
+  #                      replicas={{ gluster_replicas }} name={{ gluster_volume }}
+  #                      state=present
+  #      run_once: true
+  #
+  #    - name: Start Gluster volume
+  #      gluster_volume: name={{gluster_volume}} state=started
 
-  with_items:
-    - ec2

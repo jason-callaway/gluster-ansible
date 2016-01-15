@@ -4,7 +4,9 @@
   hosts: localhost
   gather_facts: no
   connection: local
-  sudo: no
+  become: no
+  vars_files:
+    - vars.yaml
   tasks:
   - name: create the Route 53 hosted zone
     route53_zone:
