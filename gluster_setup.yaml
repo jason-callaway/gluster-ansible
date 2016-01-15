@@ -9,7 +9,6 @@
   vars_files:
     - vars.yaml
 
-
 - include: create_vpc.yaml
 
 # Set up security groups for the VPC
@@ -23,8 +22,13 @@
 # Create Gluster nodes
 - include: create_nodes.yaml
   vars:
-    vpc_subnet_id_a: "{{ vpc.subnets.0.id }}"
-    vpc_subnet_id_b: "{{ vpc.subnets.1.id }}"
+    vpc_subnet_id: "{{ vpc.subnets.0.id }}"
+    sg_group_id: "{{ group.group_id }}"
+- include: create_nodes.yaml
+  vars:
+    vpc_subnet_id: "{{ vpc.subnets.1.id }}"
+    sg_group_id: "{{ group.group_id }}"
+
 
 # Install and configure Gluster
-- include: install_gluster.yaml
+#- include: install_gluster.yaml

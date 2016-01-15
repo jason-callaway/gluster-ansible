@@ -1,6 +1,6 @@
 # vim: set ft=ansible:
 ---
-- name: Configure the nodes on side a
+- name: Configure the nodes
   hosts: localhost
   gather_facts: no
   connection: local
@@ -15,11 +15,13 @@
       region: "{{ ec2_region }}"
       key_name: "{{ ec2_keypair }}"
       instance_type: "{{ ec2_instance_type }}"
-      group: "{{ cluster_id }}-node }}"
+      group_id: "{{ sg_group_id }}"
       exact_count: "{{ nodes_per_az }}"
+      count_tag: gluster
       wait: yes
       instance_tags:
         Name: "{{ cluster_id }}"
+        gluster: true
       volumes:
         - volume_size: 10
           device_type: gp2
@@ -29,32 +31,27 @@
           device_type: gp2
           volume_size: 10
           delete_on_termination: True
-      vpc_subnet_id: "{{ item }}"
+      vpc_subnet_id: "{{ vpc_subnet_id }}"
       assign_public_ip: yes
     register: ec2
-    with_items:
-      - vpc_subnet_id_a
-      - vpc_subnet_id_b
 
   - name: Create Route 53 DNS entry
     route53:
       command: create
       zone: "{{ r53_zone }}"
-      record: "gluster-node-{{ item.1.id.split('-').1 }}.{{ r53_zone }}"
+      record: "gluster-node-{{ item.id.split('-').1 }}.gluster.{{ r53_zone }}"
       ttl: 60
       type: A
-      value: "{{ item.0.public_ip }}"
+      value: "{{ item.public_ip }}"
       overwrite: yes
-    when: item.0.state == 'running'
-    with_subelements:
-      - ec2.results
-      - instances
+    when: item.state == "running"
+    with_items:
+      - "{{ ec2.results.0.tagged_instances }}"
 
   - name: Wait for ssh
     wait_for:
       port: 22
-      host: "{{ item.1.dns_name }}"
-    when: item.1.state == "running"
-    with_subelements:
-    - ec2.results
-    - instances
+      host: "{{ item.dns_name }}"
+    when: item.state == "running"
+    with_items:
+      - "{{ ec2.results.0.tagged_instances }}"

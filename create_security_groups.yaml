@@ -19,11 +19,9 @@
         from_port: 22
         to_port: 22
         cidr_ip: 0.0.0.0/0
-      - proto: tcp
-        from_port: all
-        to_port: all
+      - proto: all
         group_name: "{{ cluster_id }}-node"
-        group_desc: "{{ cluster_id }} nodes"
       rules_egress:
       - proto: all
         cidr_ip: 0.0.0.0/0
+    register: group
