@@ -6,9 +6,6 @@
   connection: local
   sudo: no
   tasks:
-  - fail:
-      msg: required values not set
-    when: ec2_region is not defined or cluster_id is not defined
 
   - name: Create ec2 vpc
     ec2_vpc:

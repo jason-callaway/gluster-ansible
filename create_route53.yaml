@@ -1,0 +1,14 @@
+# vim: set ft=ansible:
+---
+- name: Configure the VPC
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  sudo: no
+  tasks:
+  - name: create the Route 53 hosted zone
+    route53_zone:
+      vpc_id: "{{ vpc.vpc_id }}"
+      vpc_region: "{{ ec2_region }}"
+      zone: "{{ r53_zone }}"
+      state: present
