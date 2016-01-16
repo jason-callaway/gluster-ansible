@@ -17,11 +17,11 @@
       instance_type: "{{ ec2_instance_type }}"
       group_id: "{{ sg_group_id }}"
       exact_count: "{{ nodes_per_az }}"
-      count_tag: gluster
+      count_tag: gluster_sidea
       wait: no
       instance_tags:
         Name: "{{ cluster_id }}"
-        gluster: true
+        gluster_sidea: true
       volumes:
         - volume_size: 10
           device_type: gp2

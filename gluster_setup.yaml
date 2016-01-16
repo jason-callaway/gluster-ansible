@@ -20,11 +20,11 @@
 - include: create_route53.yaml
 
 # Create Gluster nodes
-- include: create_nodes.yaml
+- include: create_nodes_sidea.yaml
   vars:
     vpc_subnet_id: "{{ vpc.subnets.0.id }}"
     sg_group_id: "{{ group.group_id }}"
-- include: create_nodes.yaml
+- include: create_nodes_sideb.yaml
   vars:
     vpc_subnet_id: "{{ vpc.subnets.1.id }}"
     sg_group_id: "{{ group.group_id }}"
