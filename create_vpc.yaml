@@ -22,10 +22,12 @@
       region: "{{ ec2_region }}"
       subnets:
       - cidr: 172.18.1.0/24
+        az: "{{ ec2_region }}a"
         resource_tags:
           env: "{{ cluster_id }}"
           Name: "{{ cluster_id }}-subnet-a"
       - cidr: 172.18.2.0/24
+        az: "{{ ec2_region }}c"
         resource_tags:
           env: "{{ cluster_id }}"
           Name: "{{ cluster_id }}-subnet-b"
@@ -42,3 +44,6 @@
           env: "{{ cluster_id }}"
       wait: yes
     register: vpc
+
+  - name: Debug vpc data structure
+    debug: var=vpc

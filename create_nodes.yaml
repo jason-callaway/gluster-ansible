@@ -18,10 +18,9 @@
       group_id: "{{ sg_group_id }}"
       exact_count: "{{ nodes_per_az }}"
       count_tag: gluster
-      wait: yes
+      wait: no
       instance_tags:
         Name: "{{ cluster_id }}"
-        gluster: true
       volumes:
         - volume_size: 10
           device_type: gp2
@@ -34,6 +33,9 @@
       vpc_subnet_id: "{{ vpc_subnet_id }}"
       assign_public_ip: yes
     register: ec2
+
+  - name: Debug ec2 data structure
+    debug: var=ec2
 
   - name: Create Route 53 DNS entry
     route53:
