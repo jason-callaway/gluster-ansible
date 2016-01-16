@@ -21,6 +21,7 @@
       wait: no
       instance_tags:
         Name: "{{ cluster_id }}"
+        gluster: true
       volumes:
         - volume_size: 10
           device_type: gp2
