@@ -4,15 +4,9 @@ security_rules:
     from_port: 22
     to_port: 22
     cidr_ip: 0.0.0.0/0
-{% for instance in ec2.results.0.instances %}
+{% for instance in groups.ec2 %}
   - proto: all
     from_port: -1
     to_port: -1
-    cidr_ip: {{ instance.public_ip }}/32
-{% endfor %}
-{% for instance in ec2.results.1.instances %}
-  - proto: all
-    from_port: -1
-    to_port: -1
-    cidr_ip: {{ instance.public_ip }}/32
+    cidr_ip: {{ instance.split('.').0.replace('ec2-','').replace('-','.') }}/32
 {% endfor %}

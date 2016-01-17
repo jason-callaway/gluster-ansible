@@ -51,6 +51,14 @@
       - "{{ ec2.results.0.instances }}"
       - "{{ ec2.results.1.instances }}"
 
+  - name: Add ips to ec2ips host group
+    add_host:
+      name: "{{ item.public_ip }}"
+      groups: ec2ips
+    with_items:
+      - "{{ ec2.results.0.instances }}"
+      - "{{ ec2.results.1.instances }}"
+
   - name: Create Route 53 DNS entry
     route53:
       command: create

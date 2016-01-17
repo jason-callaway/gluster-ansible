@@ -38,10 +38,14 @@
       service: name=glusterd state=started
 
     - name: Create Gluster volume
-      gluster_volume: bricks={{ gluster_brick_dirs | join(",") }}
-                      cluster={{ groups.ec2 | join(",") }}
-                      replicas=2 name={{ gluster_volume }} state=present
+      gluster_volume:
+        bricks: "{{ gluster_brick_dirs | join(',') }}"
+        cluster: "{{ groups.ec2 | join(',') }}"
+        replicas: 2
+        name: "{{ gluster_volume }}"
+        host: "{{ inventory_hostname }}"
+        state: present
       run_once: true
 
-    - name: Start Gluster volume
-      gluster_volume: name={{ gluster_volume }} state=started
+#    - name: Start Gluster volume
+#      gluster_volume: name={{ gluster_volume }} state=started

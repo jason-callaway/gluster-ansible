@@ -7,6 +7,9 @@
     - vars.yaml
   tasks:
 
+  - name: debug groups
+    debug: var=groups
+
   - name: Run sg template
     template: src=sg_rules.j2 dest=./rules.yaml
 
