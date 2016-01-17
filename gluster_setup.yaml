@@ -4,8 +4,6 @@
   connection: local
   become: False
   gather_facts: no
-  # Pull in access and secret keys, be sure to run ansible-playbook with
-  # --ask-vault-pass, see README.md for more information
   vars_files:
     - vars.yaml
 
@@ -20,17 +18,13 @@
 - include: create_route53.yaml
 
 # Create Gluster nodes
-- include: create_nodes_sidea.yaml
+- include: create_nodes.yaml
   vars:
-    side_tag: gluster_sidea
-    vpc_id: "{{ vpc.vpc_id }}"
-    vpc_subnet_id: "{{ vpc.subnets.0.id }}"
-    sg_group_id: "{{ group.group_id }}"
-- include: create_nodes_sideb.yaml
-  vars:
-    side_tag: gluster_sideb
-    vpc_id: "{{ vpc.vpc_id }}"
-    vpc_subnet_id: "{{ vpc.subnets.1.id }}"
+    sides:
+      - subnet: "{{ vpc.subnets.0.id }}"
+        side_tag: "side_a"
+      - subnet: "{{ vpc.subnets.1.id }}"
+        side_tag: "side_b"
     sg_group_id: "{{ group.group_id }}"
 
 # Update the security rules

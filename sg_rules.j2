@@ -4,18 +4,15 @@ security_rules:
     from_port: 22
     to_port: 22
     cidr_ip: 0.0.0.0/0
-{% for instance in ec2_a.instances %}
+{% for instance in ec2.results.0.instances %}
   - proto: all
     from_port: -1
     to_port: -1
     cidr_ip: {{ instance.public_ip }}/32
 {% endfor %}
-{% for instance in ec2_b.instances %}
+{% for instance in ec2.results.1.instances %}
   - proto: all
     from_port: -1
     to_port: -1
     cidr_ip: {{ instance.public_ip }}/32
 {% endfor %}
-  - rules_egress:
-    proto: all
-    cidr_ip: 0.0.0.0/0

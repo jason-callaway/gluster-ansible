@@ -3,6 +3,8 @@
   hosts: localhost
   become: False
   connection: local
+  vars_files:
+    - vars.yaml
   tasks:
 
   - name: Run sg template
@@ -11,6 +13,9 @@
   - name: Load sg vars
     include_vars: ./rules.yaml
 
+  - name: debug sg vars
+    debug: var=security_rules
+
   - name: Update rules
     ec2_group:
       name: "{{ cluster_id }}-node"
@@ -18,3 +23,6 @@
       region: "{{ ec2_region }}"
       vpc_id: "{{ vpc_id }}"
       rules: "{{ security_rules }}"
+      rules_egress:
+        - proto: all
+          cidr_ip: 0.0.0.0/0
