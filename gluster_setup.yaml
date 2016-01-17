@@ -7,6 +7,9 @@
   vars_files:
     - vars.yaml
 
+  tasks:
+    - debug: var=groups.tag_Name_gluster_demo
+
 - include: create_vpc.yaml
 
 # Set up security groups for the VPC
@@ -31,6 +34,9 @@
 - include: update_security_group.yaml
   vars:
     vpc_id: "{{ vpc.vpc_id }}"
+
+# Configure the nodes
+#- include: configure_nodes.yaml
 
 # Install and configure Gluster
 #- include: install_gluster.yaml

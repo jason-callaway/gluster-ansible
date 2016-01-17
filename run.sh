@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 printf "Refreshing EC2 cache..."
-#./inventory/aws/hosts/ec2.py --refresh-cache
+./inventory/aws/hosts/ec2.py --refresh-cache
 printf "done\n"
 
 # -vvvvv

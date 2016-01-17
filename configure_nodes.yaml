@@ -1,0 +1,12 @@
+# vim: set ft=ansible:
+---
+- name: Create the node list
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  become: False
+  vars_files:
+    - vars.yaml
+  tasks:
+
+  - name: Concatenate host lists
