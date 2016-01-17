@@ -4,7 +4,7 @@
   hosts: localhost
   gather_facts: no
   connection: local
-  become: no
+  become: False
   vars_files:
     - vars.yaml
 
@@ -47,3 +47,4 @@
 
   - name: Debug vpc data structure
     debug: var=vpc
+    when: debug_print == true

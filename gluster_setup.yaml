@@ -2,7 +2,7 @@
 ---
 - hosts: localhost
   connection: local
-  sudo: no
+  become: False
   gather_facts: no
   # Pull in access and secret keys, be sure to run ansible-playbook with
   # --ask-vault-pass, see README.md for more information
@@ -22,13 +22,21 @@
 # Create Gluster nodes
 - include: create_nodes_sidea.yaml
   vars:
+    side_tag: gluster_sidea
+    vpc_id: "{{ vpc.vpc_id }}"
     vpc_subnet_id: "{{ vpc.subnets.0.id }}"
     sg_group_id: "{{ group.group_id }}"
 - include: create_nodes_sideb.yaml
   vars:
+    side_tag: gluster_sideb
+    vpc_id: "{{ vpc.vpc_id }}"
     vpc_subnet_id: "{{ vpc.subnets.1.id }}"
     sg_group_id: "{{ group.group_id }}"
 
+# Update the security rules
+- include: update_security_group.yaml
+  vars:
+    vpc_id: "{{ vpc.vpc_id }}"
 
 # Install and configure Gluster
 #- include: install_gluster.yaml

@@ -11,3 +11,6 @@ r53_zone: rhtps.io
 
 # How big to make the cluster
 nodes_per_az: 4
+
+# Get lots of debug data
+debug_print: true

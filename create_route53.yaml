@@ -4,13 +4,12 @@
   hosts: localhost
   gather_facts: no
   connection: local
-  become: no
+  become: False
   vars_files:
     - vars.yaml
+
   tasks:
   - name: create the Route 53 hosted zone
     route53_zone:
-#      vpc_id: "{{ vpc.vpc_id }}"
-#      vpc_region: "{{ ec2_region }}"
       zone: "{{ r53_zone }}"
       state: present

@@ -1,0 +1,20 @@
+---
+- name: Update security group rules
+  hosts: localhost
+  become: False
+  connection: local
+  tasks:
+
+  - name: Run sg template
+    template: src=sg_rules.j2 dest=./rules.yaml
+
+  - name: Load sg vars
+    include_vars: ./rules.yaml
+
+  - name: Update rules
+    ec2_group:
+      name: "{{ cluster_id }}-node"
+      description: "{{ cluster_id }}-node security group"
+      region: "{{ ec2_region }}"
+      vpc_id: "{{ vpc_id }}"
+      rules: "{{ security_rules }}"
