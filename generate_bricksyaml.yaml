@@ -1,0 +1,15 @@
+# vim: set ft=ansible:
+---
+- name: Generate the bricks.yaml file
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  become: False
+  vars_files:
+    - vars.yaml
+  tasks:
+
+    - name: Run bricks template
+      template:
+        src: ./bricks.j2
+        dest: ./bricks.yaml

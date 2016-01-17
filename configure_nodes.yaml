@@ -1,12 +1,43 @@
 # vim: set ft=ansible:
 ---
-- name: Create the node list
-  hosts: localhost
+- name: Configure the nodes
+  hosts: ec2
   gather_facts: no
-  connection: local
-  become: False
+#  connection: local
+  become: True
+  become_method: sudo
   vars_files:
     - vars.yaml
   tasks:
 
-  - name: Concatenate host lists
+  - name: Debug ec2 host group
+    debug: var=groups.ec2
+
+  - name: Copy partition script
+    copy:
+      src: ./partition.sh
+      dest: /tmp/partition.sh
+      owner: root
+      mode: 0700
+
+  - name: Execute the partition script
+    shell: /tmp/partition.sh
+
+  - name: Format EBS volume
+    filesystem:
+      fstype: xfs
+      dev: /dev/xvdb1
+
+  - name: Make the bricks directory
+    file:
+      path: "/bricks/{{ inventory_hostname }}"
+      state: directory
+      mode: 0755
+      recurse: yes
+
+  - name: Mount the volume
+    mount:
+      name: "/bricks/{{ inventory_hostname }}"
+      src: /dev/xvdb1
+      fstype: xfs
+      state: mounted

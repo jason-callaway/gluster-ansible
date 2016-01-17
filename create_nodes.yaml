@@ -12,7 +12,7 @@
   - name: debug sides variable
     debug: var=sides
 
-  - name: Create ec2 instance
+  - name: Create ec2 instances
     ec2:
       image: "{{ ec2_image }}"
       region: "{{ ec2_region }}"
@@ -69,6 +69,6 @@
     debug: var=groups
 
   - name: Wait for SSH to come up
-    wait_for: host={{ item }} port=22 delay=60 timeout=320 state=started
+    wait_for: host={{ item }} port=22 delay=0 timeout=600 state=started
     with_items:
       - "{{ groups.ec2 }}"
