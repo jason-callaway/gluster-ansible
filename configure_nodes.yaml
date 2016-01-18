@@ -3,7 +3,6 @@
 - name: Configure the nodes
   hosts: ec2
   gather_facts: no
-#  connection: local
   become: True
   become_method: sudo
   vars_files:

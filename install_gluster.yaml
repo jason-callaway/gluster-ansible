@@ -45,6 +45,3 @@
         host: "{{ inventory_hostname }}"
         state: present
       run_once: true
-
-#    - name: Start Gluster volume
-#      gluster_volume: name={{ gluster_volume }} state=started
