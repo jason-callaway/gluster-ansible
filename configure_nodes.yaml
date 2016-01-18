@@ -30,14 +30,21 @@
 
   - name: Make the bricks directory
     file:
-      path: "/bricks/{{ inventory_hostname }}"
+      path: "/bricks/brick1"
       state: directory
       mode: 0755
       recurse: yes
 
   - name: Mount the volume
     mount:
-      name: "/bricks/{{ inventory_hostname }}"
+      name: "/bricks/brick1"
       src: /dev/xvdb1
       fstype: xfs
       state: mounted
+
+  - name: Create the brick sub-directory
+    file:
+      path: "/bricks/brick1/brick"
+      state: directory
+      mode: 0755
+      recurse: yes

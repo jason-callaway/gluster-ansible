@@ -10,3 +10,5 @@ security_rules:
     to_port: -1
     cidr_ip: {{ instance.split('.').0.replace('ec2-','').replace('-','.') }}/32
 {% endfor %}
+  - proto: all
+    group_name: "{{ cluster_id }}-node"

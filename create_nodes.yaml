@@ -51,30 +51,26 @@
       - "{{ ec2.results.0.instances }}"
       - "{{ ec2.results.1.instances }}"
 
-  - name: Add ips to ec2ips host group
-    add_host:
-      name: "{{ item.public_ip }}"
-      groups: ec2ips
-    with_items:
-      - "{{ ec2.results.0.instances }}"
-      - "{{ ec2.results.1.instances }}"
-
-  - name: Create Route 53 DNS entry
-    route53:
-      command: create
-      zone: "{{ r53_zone }}"
-      record: "gluster-node-{{ item.id.split('-').1 }}.gluster.{{ r53_zone }}"
-      ttl: 60
-      type: A
-      value: "{{ item.public_ip }}"
-      overwrite: yes
-    when: item.state == "running"
-    with_items:
-      - "{{ ec2.results.0.instances }}"
-      - "{{ ec2.results.1.instances }}"
+#  - name: Create Route 53 DNS entry
+#    route53:
+#      command: create
+#      zone: "{{ r53_zone }}"
+#      record: "gluster-node-{{ item.id.split('-').1 }}.gluster.{{ r53_zone }}"
+#      ttl: 60
+#      type: A
+#      value: "{{ item.public_ip }}"
+#      overwrite: yes
+#    when: item.state == "running"
+#    with_items:
+#      - "{{ ec2.results.0.instances }}"
+#      - "{{ ec2.results.1.instances }}"
 
   - name: debug groups variable
     debug: var=groups
+
+#  - name: Wait for instance checks to pass
+#    pause:
+#      seconds: 180
 
   - name: Wait for SSH to come up
     wait_for: host={{ item }} port=22 delay=0 timeout=600 state=started

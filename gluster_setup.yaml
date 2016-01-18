@@ -18,7 +18,7 @@
     vpc_id: "{{ vpc.vpc_id }}"
 
 # Create Route 53 entries
-- include: create_route53.yaml
+#- include: create_route53.yaml
 
 # Create Gluster nodes
 - include: create_nodes.yaml
@@ -39,5 +39,5 @@
 - include: configure_nodes.yaml
 
 # Install and configure Gluster
-- include: generate_bricksyaml.yaml
+#- include: generate_bricksyaml.yaml
 - include: install_gluster.yaml
