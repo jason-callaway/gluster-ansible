@@ -39,5 +39,4 @@
 - include: configure_nodes.yaml
 
 # Install and configure Gluster
-#- include: generate_bricksyaml.yaml
 - include: install_gluster.yaml

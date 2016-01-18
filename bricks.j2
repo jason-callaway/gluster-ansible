@@ -1,5 +1,0 @@
----
-gluster_brick_dirs:
-{% for instance in groups.ec2 %}
-  - /bricks/{{ instance }}/brick
-{% endfor %}

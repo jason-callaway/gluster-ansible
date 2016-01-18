@@ -13,9 +13,6 @@
       - /bricks/brick1/brick
   tasks:
 
-#    - name: Load bricks var
-#      include_vars: ./bricks.yaml
-
     - name: Install EPEL repo
       yum:
         name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
