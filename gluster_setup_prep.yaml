@@ -6,6 +6,8 @@
   gather_facts: no
   vars_files:
     - vars.yaml
+  vars:
+    new_servers: ["one"]
 
 #  tasks:
 #    - debug: var=groups.tag_Name_gluster_demo

@@ -1,0 +1,8 @@
+#cloud-config
+
+write_files:
+- path: /etc/gluster_side
+  permissions: 644
+  content: |
+    gluster_side:side_a
+

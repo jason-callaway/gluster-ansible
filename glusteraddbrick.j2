@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gluster volume add-brick {{ gluster_volume }} replica 2 {% for host in {{ diff_hosts }} %}{{ host }}:{{ gluster_brick_dirs.0 }} {% endfor %}
+

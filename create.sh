@@ -16,6 +16,9 @@ then
     ./inventory/aws/hosts/ec2.py --refresh-cache
     printf "done\n"
     ansible-playbook -v -i inventory/aws/hosts/ec2.py gluster_setup.yaml
+    # We need to compare current vs last in the add step
+    cp gluster_hosts gluster_hosts.last
+    head -n 1 gluster_hosts | cut -d, -f1 > node_zero
 else
     echo "You must run this with ssh-agent holding a key via ssh-add"
     exit 1

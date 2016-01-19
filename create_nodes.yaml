@@ -42,6 +42,7 @@
           delete_on_termination: True
       assign_public_ip: yes
       vpc_subnet_id: "{{ item.subnet }}"
+      user_data: "{{ lookup('file', 'user_data') }}"
     with_items: sides
     register: ec2
 

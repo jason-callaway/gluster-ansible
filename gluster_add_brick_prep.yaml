@@ -7,7 +7,7 @@
   vars_files:
     - vars.yaml
 
-# Create the VPC
+# Re-run this so we can grab the subnet IDs
 - include: create_vpc.yaml
 
 # Create Gluster nodes
@@ -30,6 +30,3 @@
 
 # Install and configure Gluster
 - include: install_gluster.yaml
-
-# Add the bricks
-- include: add_brick.yaml

@@ -60,3 +60,10 @@
     shell: /tmp/gluster_create.sh
     run_once: true
     delegate_to: "{{ groups.tag_gluster_side_side_a.0 }}"
+
+- hosts: localhost
+  connection: local
+  become: False
+  tasks:
+  - name: Create gluster_hosts file locally
+    template: src=glusterhosts.j2 dest=./gluster_hosts
