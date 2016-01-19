@@ -6,6 +6,11 @@
   gather_facts: no
   vars_files:
     - vars.yaml
+  tasks:
+
+  - name: Load the group_id
+    set_fact:
+      group_id: "{{ lookup('file', './group_id_var') }}"
 
 # Re-run this so we can grab the subnet IDs
 - include: create_vpc.yaml
@@ -18,7 +23,7 @@
         side_tag: "side_a"
       - subnet: "{{ vpc.subnets.1.id }}"
         side_tag: "side_b"
-    sg_group_id: "{{ group.group_id }}"
+    sg_group_id: "{{ group_id }}"
 
 # Update the security rules
 - include: update_security_group.yaml

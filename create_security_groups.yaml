@@ -29,3 +29,6 @@
   - name: Debug group data structure
     debug: var=group
     when: debug_print == true
+
+  - name: Put group data structure in file
+    copy: content="{{ group.group_id }}" dest=./group_id_var

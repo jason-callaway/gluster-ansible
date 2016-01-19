@@ -6,11 +6,6 @@
   gather_facts: no
   vars_files:
     - vars.yaml
-  vars:
-    new_servers: ["one"]
-
-#  tasks:
-#    - debug: var=groups.tag_Name_gluster_demo
 
 # Create the VPC
 - include: create_vpc.yaml
@@ -19,9 +14,6 @@
 - include: create_security_groups.yaml
   vars:
     vpc_id: "{{ vpc.vpc_id }}"
-
-# Create Route 53 entries
-#- include: create_route53.yaml
 
 # Create Gluster nodes
 - include: create_nodes.yaml

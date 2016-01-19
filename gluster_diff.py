@@ -19,4 +19,4 @@ for new_host in diff_set:
         side_b.append(host)
 
 for n in xrange(len(side_a)):
-    print side_a[n] + ' ' + side_b[n]
+    print side_a[n] + '\n' + side_b[n]
