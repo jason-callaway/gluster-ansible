@@ -1,0 +1,58 @@
+# vim: set ft=ansible:
+---
+- hosts: localhost
+  connection: local
+  name: Prep for Gluster setup
+  become: False
+  vars_files:
+    - vars.yaml
+  vars:
+    gluster_server_list: []
+  tasks:
+
+  - name: Build host list data structure
+    set_fact:
+      gluster_server_list: "{{ gluster_server_list + [ item.0 ] + [ item.1 ] }}"
+    with_together:
+      - "{{ groups.tag_gluster_side_side_a }}"
+      - "{{ groups.tag_gluster_side_side_b }}"
+
+  - name: Debug the newly created host list
+    debug: var=gluster_server_list
+
+  - name: Create gluster_peer.sh script
+    connection: local
+    template: src=glusterpeersh.j2 dest=./gluster_peer.sh
+
+  - name: Create gluster_create.sh script
+    connection: local
+    template: src=glustercreatesh.j2 dest=./gluster_create.sh
+
+- hosts: ec2
+  name: Gluster setup
+  become: True
+  become_method: sudo
+  vars_files:
+    - vars.yaml
+  tasks:
+
+  - name: Copy gluster_peer.sh script to nodes
+    copy:
+      src: ./gluster_peer.sh
+      dest: /tmp/gluster_peer.sh
+      owner: root
+      mode: 0700
+
+  - name: Copy gluster_create.sh script to nodes
+    copy:
+      src: ./gluster_create.sh
+      dest: /tmp/gluster_create.sh
+      owner: root
+      mode: 0700
+
+  - name: Execute gluster_peer.sh script on nodes
+    shell: /tmp/gluster_peer.sh
+    ignore_errors: yes
+
+  - name: Execute gluster_create.sh script on nodes
+    shell: /tmp/gluster_create.sh

@@ -8,9 +8,17 @@ ec2_image: ami-2051294a
 ec2_keypair: nsphexboard
 ec2_instance_type: m4.xlarge
 r53_zone: rhtps.io
+az_side_a: "{{ ec2_region }}a"
+az_side_b: "{{ ec2_region }}c"
 
 # How big to make the cluster
 nodes_per_az: 4
 
 # Get lots of debug data
 debug_print: true
+
+# Gluster variables
+gluster_volume: demovol
+gluster_replicas: 2
+gluster_brick_dirs:
+  - /bricks/brick1/brick

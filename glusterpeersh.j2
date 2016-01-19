@@ -1,0 +1,6 @@
+---
+#!/bin/bash
+
+{% for instance in gluster_server_list %}
+gluster peer probe {{ instance }}
+{% endfor %}

@@ -7,9 +7,10 @@
   vars_files:
     - vars.yaml
 
-  tasks:
-    - debug: var=groups.tag_Name_gluster_demo
+#  tasks:
+#    - debug: var=groups.tag_Name_gluster_demo
 
+# Create the VPC
 - include: create_vpc.yaml
 
 # Set up security groups for the VPC
@@ -40,3 +41,6 @@
 
 # Install and configure Gluster
 - include: install_gluster.yaml
+
+# Create the volume
+- include: create_volume.yaml

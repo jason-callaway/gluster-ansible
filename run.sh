@@ -5,7 +5,7 @@ printf "Refreshing EC2 cache..."
 printf "done\n"
 
 ssh-add -l >/dev/null 2>&1
-if [ "$?" != "0" ]
+if [ "${?}" == "0" ]
 then
     # For additional debug: -vvvvv and ANSIBLE_KEEP_REMOTE_FILES=1
     ansible-playbook -v -i inventory/aws/hosts/ec2.py gluster_setup.yaml

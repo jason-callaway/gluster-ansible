@@ -6,11 +6,7 @@
   become_method: sudo
   vars_files:
     - vars.yaml
-  vars:
-    - gluster_volume: demovol
-    - gluster_replicas: 2
-    - gluster_brick_dirs:
-      - /bricks/brick1/brick
+
   tasks:
 
     - name: Install EPEL repo
@@ -26,22 +22,13 @@
       file: owner=root group=root mode=0644
             path=/etc/yum.repos.d/glusterfs-epel.repo
 
-    - name: Install glusterfs server packages (CentOS)
+    - name: Install glusterfs server packages
       yum: name={{ item }} state=installed enablerepo="glusterfs-epel"
       with_items:
         - glusterfs-server
         - glusterfs-client
         - attr
 
-    - name: Ensure the GlusterFS service is running (CentOS)
+    - name: Ensure the GlusterFS service is running
       service: name=glusterd state=started
 
-    - name: Create Gluster volume
-      gluster_volume:
-        bricks: "{{ gluster_brick_dirs | join(',') }}"
-        cluster: "{{ groups.ec2 | join(',') }}"
-        replicas: 2
-        name: "{{ gluster_volume }}"
-        host: "{{ inventory_hostname }}"
-        state: present
-      run_once: true
