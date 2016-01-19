@@ -24,7 +24,7 @@ First, review the default settings in [vars.yaml](vars.yaml).
 
 ```
 $ git clone https://github.com/jason-callaway/gluster-ansible.git
-$ cd demo-ansible
+$ cd gluster-ansible
 $ ./create_cluster.sh 4 # Create a cluster with 4 nodes per AZ
 ```
 
