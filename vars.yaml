@@ -11,9 +11,6 @@ r53_zone: rhtps.io
 az_side_a: "{{ ec2_region }}a"
 az_side_b: "{{ ec2_region }}c"
 
-# How big to make the cluster
-nodes_per_az: 4
-
 # Get lots of debug data
 debug_print: true
 

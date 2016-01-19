@@ -1,0 +1,35 @@
+# vim: set ft=ansible:
+---
+- hosts: localhost
+  connection: local
+  become: False
+  gather_facts: no
+  vars_files:
+    - vars.yaml
+
+# Create the VPC
+- include: create_vpc.yaml
+
+# Create Gluster nodes
+- include: create_nodes.yaml
+  vars:
+    sides:
+      - subnet: "{{ vpc.subnets.0.id }}"
+        side_tag: "side_a"
+      - subnet: "{{ vpc.subnets.1.id }}"
+        side_tag: "side_b"
+    sg_group_id: "{{ group.group_id }}"
+
+# Update the security rules
+- include: update_security_group.yaml
+  vars:
+    vpc_id: "{{ vpc.vpc_id }}"
+
+# Configure the nodes
+- include: configure_nodes.yaml
+
+# Install and configure Gluster
+- include: install_gluster.yaml
+
+# Add the bricks
+- include: add_brick.yaml
