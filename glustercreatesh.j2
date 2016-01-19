@@ -5,5 +5,6 @@ if [ "${?}" != "0" ]
 then
   gluster volume create {{ gluster_volume }} replica 2 transport tcp {% for server in gluster_server_list %}{{ server + ':' + gluster_brick_dirs.0 + ' ' }}{% endfor %}
 
+  gluster volume start {{ gluster_volume }}
 fi
 

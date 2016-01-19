@@ -12,7 +12,11 @@
   - name: debug sides variable
     debug: var=sides
 
-  - name: Create ec2 instances
+  # I don't like doing this twice, but I'm having problems with the ec2 data
+  # structure changing on first run or subsequent runs. Without the ability
+  # to trigger dynamic inventory refreshes from plays, I can't think of a
+  # better way to do this.
+  - name: Create ec2 instances on side a
     ec2:
       image: "{{ ec2_image }}"
       region: "{{ ec2_region }}"
@@ -41,6 +45,12 @@
     with_items: sides
     register: ec2
 
+  - name: Debug side a data structure
+    debug: var=sidea
+
+  - name: Debug side b data structure
+    debug: var=sideb
+
   - name: Debug ec2 data structure
     debug: var=ec2
     when: debug_print == true
@@ -54,11 +64,19 @@
   - name: debug groups variable
     debug: var=groups
 
-  - name: Wait for instance checks to pass
-    pause:
-      minutes: 10
+#  - name: Wait for instance checks to pass
+#    pause:
+#      minutes: 10
 
   - name: Wait for SSH to come up
     wait_for: host={{ item }} port=22 delay=0 timeout=600 state=started
     with_items:
       - "{{ groups.ec2 }}"
+
+  - name: Wait for successful SSH
+    command: "ssh -o StrictHostKeyChecking=no -o PasswordAuthentication=no -o ConnectTimeout=10 -o UserKnownHostsFile=/dev/null ec2-user@{{ item }} echo host is up"
+    register: result
+    until: result.rc == 0
+    retries: 60
+    delay: 10
+    with_items: "{{ groups.ec2 }}"
