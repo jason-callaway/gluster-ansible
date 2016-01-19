@@ -11,6 +11,7 @@
 
   - name: debug sides variable
     debug: var=sides
+    when: debug_print == true
 
   # I don't like doing this twice, but I'm having problems with the ec2 data
   # structure changing on first run or subsequent runs. Without the ability
@@ -58,6 +59,7 @@
 
   - name: debug groups variable
     debug: var=groups
+    when: debug_print == true
 
   - name: Wait for SSH to come up
     wait_for: host={{ item }} port=22 delay=0 timeout=600 state=started

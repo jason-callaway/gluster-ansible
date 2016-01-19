@@ -23,6 +23,8 @@ Once you have the tools from above installed and configured, use this process to
 First, review the default settings in [vars.yaml](vars.yaml).
 
 ```
+$ ssh-agent bash
+$ ssh-add /path/to/instancekey.pem
 $ git clone https://github.com/jason-callaway/gluster-ansible.git
 $ cd gluster-ansible
 $ ./create_cluster.sh 4 # Create a cluster with 4 nodes per AZ
