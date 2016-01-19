@@ -53,6 +53,10 @@
   - name: Execute gluster_peer.sh script on nodes
     shell: /tmp/gluster_peer.sh
     ignore_errors: yes
+    run_once: true
+    delegate_to: "{{ groups.tag_gluster_side_side_a.0 }}"
 
   - name: Execute gluster_create.sh script on nodes
     shell: /tmp/gluster_create.sh
+    run_once: true
+    delegate_to: "{{ groups.tag_gluster_side_side_a.0 }}"

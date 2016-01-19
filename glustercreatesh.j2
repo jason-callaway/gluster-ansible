@@ -1,4 +1,3 @@
----
 #!/bin/bash
 
 gluster volume info {{ gluster_volume }} >/dev/null 2>&1
@@ -7,3 +6,4 @@ then
   gluster volume create {{ gluster_volume }} replica 2 transport tcp {% for server in gluster_server_list %}{{ server + ':' + gluster_brick_dirs.0 + ' ' }}{% endfor %}
 
 fi
+
