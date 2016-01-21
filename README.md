@@ -3,6 +3,9 @@ Ansible playbook for setting up demo Gluster environments
 
 This tool will use Ansible to deploy community Gluster on RHEL AWS instances.
 
+## Demo video
+If you want to see this happening, check out [https://youtu.be/-wsJjrLQKqk](https://youtu.be/-wsJjrLQKqk).
+
 ## Not for production
 Note that this repo is currently only good for showing the "art of the possible." We're working on making this more production-ready, but it's not there yet.
 
