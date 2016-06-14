@@ -1,0 +1,43 @@
+---
+# tasks file for yum
+---
+# tasks file for yum
+- name: install httpd and createrepo
+  yum:
+    name: httpd, createrepo
+    state: present
+
+- name: set docroot
+  lineinfile:
+    dest: /etc/httpd/conf/httpd.conf
+    regexp: "^DocumentRoot"
+    line: "DocumentRoot \"{{ docroot }}\""
+
+- name: start httpd service
+  service:
+    name: httpd
+    state: restarted
+    enabled: yes
+
+- name: copy gluster repos
+  copy:
+    src: "{{ gluster_tarball }}"
+    dest: "{{ docroot }}/{{ gluster_tarball }}"
+  when: not retrieve_from_s3
+
+- name: copy gluster repos from s3
+  command: "aws s3 cp {{ gluster_tarball_s3 }} ."
+  args:
+    chdir: "{{ docroot }}"
+    creates: "{{ docroot }}/{{ gluster_tarball }}"
+  when: retrieve_from_s3
+
+- name: untar gluster repos
+  command: "tar xvzf {{ gluster_tarball }}"
+  args:
+    chdir: "{{ docroot }}"
+
+- name: set up yum repos
+  command: "createrepo -d {{ docroot }}/{{ item }}"
+  with_items:
+    - "{{ gluster_repos }}"

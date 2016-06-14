@@ -1,0 +1,10 @@
+---
+# vars file for yum
+docroot: /data/html
+retrieve_from_s3: true
+gluster_tarball: gluster-3.1.tar.gz
+gluster_tarball_s3: "s3://gluster-3.1/{{ gluster_tarball }}"
+gluster_repos:
+  - "rhel-6-server-rpms"
+  - "rhel-scalefs-for-rhel-6-server-rpms"
+  - "rh-gluster-3-nfs-for-rhel-6-server-rpms"

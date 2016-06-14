@@ -1,0 +1,40 @@
+---
+security_rules:
+  - proto: tcp
+    from_port: 22
+    to_port: 22
+    cidr_ip: 0.0.0.0/0
+  - proto: all
+    from_port: -1
+    to_port: -1
+    cidr_ip: 52.91.105.144/32
+  - proto: all
+    from_port: -1
+    to_port: -1
+    cidr_ip: 54.152.123.29/32
+  - proto: all
+    from_port: -1
+    to_port: -1
+    cidr_ip: 54.164.219.109/32
+  - proto: all
+    from_port: -1
+    to_port: -1
+    cidr_ip: 52.91.208.73/32
+  - proto: all
+    from_port: -1
+    to_port: -1
+    cidr_ip: 52.91.45.88/32
+  - proto: all
+    from_port: -1
+    to_port: -1
+    cidr_ip: 54.84.188.201/32
+  - proto: all
+    from_port: -1
+    to_port: -1
+    cidr_ip: 54.84.170.244/32
+  - proto: all
+    from_port: -1
+    to_port: -1
+    cidr_ip: 52.91.229.78/32
+  - proto: all
+    group_name: "gluster-demo-node"

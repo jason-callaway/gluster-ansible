@@ -1,0 +1,6 @@
+# vim: set ft=ansible:
+---
+- name: create the Route 53 hosted zone
+  route53_zone:
+    zone: "{{ r53_zone }}"
+    state: present

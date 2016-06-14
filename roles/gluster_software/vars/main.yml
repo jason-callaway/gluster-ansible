@@ -1,0 +1,4 @@
+---
+# vars file for gluster_software
+## software_source can be rhsm or yum
+software_source: yum

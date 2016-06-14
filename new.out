@@ -1,0 +1,2378 @@
+Refreshing EC2 cache (1 of 2)...{
+  "_meta": {
+    "hostvars": {
+      "ec2-54-165-116-143.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "1", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-549a9ed5", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.165.116.143", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:35.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1c", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-2-196.ec2.internal", 
+        "ec2_private_ip_address": "172.18.2.196", 
+        "ec2_public_dns_name": "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-3464951e", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_b", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-165-254-213.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "3", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-165-254-213.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-619a9ee0", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.165.254.213", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:35.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1c", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-2-194.ec2.internal", 
+        "ec2_private_ip_address": "172.18.2.194", 
+        "ec2_public_dns_name": "ec2-54-165-254-213.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-3464951e", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_b", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-172-0-231.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-579a9ed6", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.172.0.231", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:35.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1c", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-2-197.ec2.internal", 
+        "ec2_private_ip_address": "172.18.2.197", 
+        "ec2_public_dns_name": "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-3464951e", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_b", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-175-80-99.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "1", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-d890ee6b", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.175.80.99", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:01.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-1-232.ec2.internal", 
+        "ec2_private_ip_address": "172.18.1.232", 
+        "ec2_public_dns_name": "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-6bb27633", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_a", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-209-35-103.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-d990ee6a", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.209.35.103", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:01.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-1-233.ec2.internal", 
+        "ec2_private_ip_address": "172.18.1.233", 
+        "ec2_public_dns_name": "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-6bb27633", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_a", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-209-35-174.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "2", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-df90ee6c", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.209.35.174", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:01.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-1-231.ec2.internal", 
+        "ec2_private_ip_address": "172.18.1.231", 
+        "ec2_public_dns_name": "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-6bb27633", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_a", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-86-144-35.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "2", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-559a9ed4", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.86.144.35", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:35.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1c", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-2-195.ec2.internal", 
+        "ec2_private_ip_address": "172.18.2.195", 
+        "ec2_public_dns_name": "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-3464951e", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_b", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-88-30-186.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "3", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-de90ee6d", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.88.30.186", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:01.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-1-230.ec2.internal", 
+        "ec2_private_ip_address": "172.18.1.230", 
+        "ec2_public_dns_name": "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-6bb27633", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_a", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }
+    }
+  }, 
+  "ami_2051294a": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "ec2": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "i-549a9ed5": [
+    "ec2-54-165-116-143.compute-1.amazonaws.com"
+  ], 
+  "i-559a9ed4": [
+    "ec2-54-86-144-35.compute-1.amazonaws.com"
+  ], 
+  "i-579a9ed6": [
+    "ec2-54-172-0-231.compute-1.amazonaws.com"
+  ], 
+  "i-619a9ee0": [
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "i-d890ee6b": [
+    "ec2-54-175-80-99.compute-1.amazonaws.com"
+  ], 
+  "i-d990ee6a": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com"
+  ], 
+  "i-de90ee6d": [
+    "ec2-54-88-30-186.compute-1.amazonaws.com"
+  ], 
+  "i-df90ee6c": [
+    "ec2-54-209-35-174.compute-1.amazonaws.com"
+  ], 
+  "key_nsphexboard": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "security_group_gluster_demo_node": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "tag_Name_gluster_demo": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "tag_gluster_side_side_a": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com"
+  ], 
+  "tag_gluster_side_side_b": [
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "type_m4_xlarge": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "us-east-1": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "us-east-1a": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com"
+  ], 
+  "us-east-1c": [
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "vpc_id_vpc_b06a16d4": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ]
+}
+done
+Using /Users/jason/PycharmProjects/gluster-ansible/ansible.cfg as config file
+
+PLAY ***************************************************************************
+
+PLAY [Configure the VPC] *******************************************************
+
+TASK [Create ec2 vpc] **********************************************************
+ok: [localhost] => {"changed": false, "igw_id": "igw-ea63a48e", "subnets": [{"az": "us-east-1a", "cidr": "172.18.1.0/24", "id": "subnet-6bb27633", "resource_tags": {"Name": "gluster-demo-subnet-a", "env": "gluster-demo"}}, {"az": "us-east-1c", "cidr": "172.18.2.0/24", "id": "subnet-3464951e", "resource_tags": {"Name": "gluster-demo-subnet-b", "env": "gluster-demo"}}], "vpc": {"cidr_block": "172.18.0.0/16", "dhcp_options_id": "dopt-0d2bce68", "id": "vpc-b06a16d4", "region": "us-east-1", "state": "available"}, "vpc_id": "vpc-b06a16d4"}
+
+TASK [Debug vpc data structure] ************************************************
+ok: [localhost] => {
+    "vpc": {
+        "changed": false, 
+        "igw_id": "igw-ea63a48e", 
+        "subnets": [
+            {
+                "az": "us-east-1a", 
+                "cidr": "172.18.1.0/24", 
+                "id": "subnet-6bb27633", 
+                "resource_tags": {
+                    "Name": "gluster-demo-subnet-a", 
+                    "env": "gluster-demo"
+                }
+            }, 
+            {
+                "az": "us-east-1c", 
+                "cidr": "172.18.2.0/24", 
+                "id": "subnet-3464951e", 
+                "resource_tags": {
+                    "Name": "gluster-demo-subnet-b", 
+                    "env": "gluster-demo"
+                }
+            }
+        ], 
+        "vpc": {
+            "cidr_block": "172.18.0.0/16", 
+            "dhcp_options_id": "dopt-0d2bce68", 
+            "id": "vpc-b06a16d4", 
+            "region": "us-east-1", 
+            "state": "available"
+        }, 
+        "vpc_id": "vpc-b06a16d4"
+    }
+}
+
+PLAY [Configure the security groups] *******************************************
+
+TASK [Create ec2 node security group] ******************************************
+changed: [localhost] => {"changed": true, "group_id": "sg-a293f9db"}
+
+TASK [Debug group data structure] **********************************************
+ok: [localhost] => {
+    "group": {
+        "changed": true, 
+        "group_id": "sg-a293f9db"
+    }
+}
+
+PLAY [Create the nodes] ********************************************************
+
+TASK [debug sides variable] ****************************************************
+ok: [localhost] => {
+    "sides": [
+        {
+            "side_tag": "side_a", 
+            "subnet": "subnet-6bb27633"
+        }, 
+        {
+            "side_tag": "side_b", 
+            "subnet": "subnet-3464951e"
+        }
+    ]
+}
+
+TASK [Create ec2 instances] ****************************************************
+ok: [localhost] => (item={u'subnet': u'subnet-6bb27633', u'side_tag': u'side_a'}) => {"changed": false, "instance_ids": null, "instances": [], "item": {"side_tag": "side_a", "subnet": "subnet-6bb27633"}, "tagged_instances": [{"ami_launch_index": "0", "architecture": "x86_64", "block_device_mapping": {"/dev/sda1": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-5f5b90a3"}, "/dev/xvdb": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-585b90a4"}}, "dns_name": "ec2-54-209-35-103.compute-1.amazonaws.com", "ebs_optimized": false, "groups": {"sg-a293f9db": "gluster-demo-node"}, "hypervisor": "xen", "id": "i-d990ee6a", "image_id": "ami-2051294a", "instance_type": "m4.xlarge", "kernel": null, "key_name": "nsphexboard", "launch_time": "2016-01-19T02:37:01.000Z", "placement": "us-east-1a", "private_dns_name": "ip-172-18-1-233.ec2.internal", "private_ip": "172.18.1.233", "public_dns_name": "ec2-54-209-35-103.compute-1.amazonaws.com", "public_ip": "54.209.35.103", "ramdisk": null, "region": "us-east-1", "root_device_name": "/dev/sda1", "root_device_type": "ebs", "state": "running", "state_code": 16, "tags": {"Name": "gluster-demo", "gluster_side": "side_a"}, "tenancy": "default", "virtualization_type": "hvm"}, {"ami_launch_index": "1", "architecture": "x86_64", "block_device_mapping": {"/dev/sda1": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-865b907a"}, "/dev/xvdb": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-455b90b9"}}, "dns_name": "ec2-54-175-80-99.compute-1.amazonaws.com", "ebs_optimized": false, "groups": {"sg-a293f9db": "gluster-demo-node"}, "hypervisor": "xen", "id": "i-d890ee6b", "image_id": "ami-2051294a", "instance_type": "m4.xlarge", "kernel": null, "key_name": "nsphexboard", "launch_time": "2016-01-19T02:37:01.000Z", "placement": "us-east-1a", "private_dns_name": "ip-172-18-1-232.ec2.internal", "private_ip": "172.18.1.232", "public_dns_name": "ec2-54-175-80-99.compute-1.amazonaws.com", "public_ip": "54.175.80.99", "ramdisk": null, "region": "us-east-1", "root_device_name": "/dev/sda1", "root_device_type": "ebs", "state": "running", "state_code": 16, "tags": {"Name": "gluster-demo", "gluster_side": "side_a"}, "tenancy": "default", "virtualization_type": "hvm"}, {"ami_launch_index": "2", "architecture": "x86_64", "block_device_mapping": {"/dev/sda1": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-955b9069"}, "/dev/xvdb": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-965b906a"}}, "dns_name": "ec2-54-209-35-174.compute-1.amazonaws.com", "ebs_optimized": false, "groups": {"sg-a293f9db": "gluster-demo-node"}, "hypervisor": "xen", "id": "i-df90ee6c", "image_id": "ami-2051294a", "instance_type": "m4.xlarge", "kernel": null, "key_name": "nsphexboard", "launch_time": "2016-01-19T02:37:01.000Z", "placement": "us-east-1a", "private_dns_name": "ip-172-18-1-231.ec2.internal", "private_ip": "172.18.1.231", "public_dns_name": "ec2-54-209-35-174.compute-1.amazonaws.com", "public_ip": "54.209.35.174", "ramdisk": null, "region": "us-east-1", "root_device_name": "/dev/sda1", "root_device_type": "ebs", "state": "running", "state_code": 16, "tags": {"Name": "gluster-demo", "gluster_side": "side_a"}, "tenancy": "default", "virtualization_type": "hvm"}, {"ami_launch_index": "3", "architecture": "x86_64", "block_device_mapping": {"/dev/sda1": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-445b90b8"}, "/dev/xvdb": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-735b908f"}}, "dns_name": "ec2-54-88-30-186.compute-1.amazonaws.com", "ebs_optimized": false, "groups": {"sg-a293f9db": "gluster-demo-node"}, "hypervisor": "xen", "id": "i-de90ee6d", "image_id": "ami-2051294a", "instance_type": "m4.xlarge", "kernel": null, "key_name": "nsphexboard", "launch_time": "2016-01-19T02:37:01.000Z", "placement": "us-east-1a", "private_dns_name": "ip-172-18-1-230.ec2.internal", "private_ip": "172.18.1.230", "public_dns_name": "ec2-54-88-30-186.compute-1.amazonaws.com", "public_ip": "54.88.30.186", "ramdisk": null, "region": "us-east-1", "root_device_name": "/dev/sda1", "root_device_type": "ebs", "state": "running", "state_code": 16, "tags": {"Name": "gluster-demo", "gluster_side": "side_a"}, "tenancy": "default", "virtualization_type": "hvm"}]}
+ok: [localhost] => (item={u'subnet': u'subnet-3464951e', u'side_tag': u'side_b'}) => {"changed": false, "instance_ids": null, "instances": [], "item": {"side_tag": "side_b", "subnet": "subnet-3464951e"}, "tagged_instances": [{"ami_launch_index": "2", "architecture": "x86_64", "block_device_mapping": {"/dev/sda1": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-d03a1d0c"}, "/dev/xvdb": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-163b1cca"}}, "dns_name": "ec2-54-86-144-35.compute-1.amazonaws.com", "ebs_optimized": false, "groups": {"sg-a293f9db": "gluster-demo-node"}, "hypervisor": "xen", "id": "i-559a9ed4", "image_id": "ami-2051294a", "instance_type": "m4.xlarge", "kernel": null, "key_name": "nsphexboard", "launch_time": "2016-01-19T02:37:35.000Z", "placement": "us-east-1c", "private_dns_name": "ip-172-18-2-195.ec2.internal", "private_ip": "172.18.2.195", "public_dns_name": "ec2-54-86-144-35.compute-1.amazonaws.com", "public_ip": "54.86.144.35", "ramdisk": null, "region": "us-east-1", "root_device_name": "/dev/sda1", "root_device_type": "ebs", "state": "running", "state_code": 16, "tags": {"Name": "gluster-demo", "gluster_side": "side_b"}, "tenancy": "default", "virtualization_type": "hvm"}, {"ami_launch_index": "1", "architecture": "x86_64", "block_device_mapping": {"/dev/sda1": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-153b1cc9"}, "/dev/xvdb": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-443b1c98"}}, "dns_name": "ec2-54-165-116-143.compute-1.amazonaws.com", "ebs_optimized": false, "groups": {"sg-a293f9db": "gluster-demo-node"}, "hypervisor": "xen", "id": "i-549a9ed5", "image_id": "ami-2051294a", "instance_type": "m4.xlarge", "kernel": null, "key_name": "nsphexboard", "launch_time": "2016-01-19T02:37:35.000Z", "placement": "us-east-1c", "private_dns_name": "ip-172-18-2-196.ec2.internal", "private_ip": "172.18.2.196", "public_dns_name": "ec2-54-165-116-143.compute-1.amazonaws.com", "public_ip": "54.165.116.143", "ramdisk": null, "region": "us-east-1", "root_device_name": "/dev/sda1", "root_device_type": "ebs", "state": "running", "state_code": 16, "tags": {"Name": "gluster-demo", "gluster_side": "side_b"}, "tenancy": "default", "virtualization_type": "hvm"}, {"ami_launch_index": "0", "architecture": "x86_64", "block_device_mapping": {"/dev/sda1": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-2e3b1cf2"}, "/dev/xvdb": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-833b1c5f"}}, "dns_name": "ec2-54-172-0-231.compute-1.amazonaws.com", "ebs_optimized": false, "groups": {"sg-a293f9db": "gluster-demo-node"}, "hypervisor": "xen", "id": "i-579a9ed6", "image_id": "ami-2051294a", "instance_type": "m4.xlarge", "kernel": null, "key_name": "nsphexboard", "launch_time": "2016-01-19T02:37:35.000Z", "placement": "us-east-1c", "private_dns_name": "ip-172-18-2-197.ec2.internal", "private_ip": "172.18.2.197", "public_dns_name": "ec2-54-172-0-231.compute-1.amazonaws.com", "public_ip": "54.172.0.231", "ramdisk": null, "region": "us-east-1", "root_device_name": "/dev/sda1", "root_device_type": "ebs", "state": "running", "state_code": 16, "tags": {"Name": "gluster-demo", "gluster_side": "side_b"}, "tenancy": "default", "virtualization_type": "hvm"}, {"ami_launch_index": "3", "architecture": "x86_64", "block_device_mapping": {"/dev/sda1": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-393b1ce5"}, "/dev/xvdb": {"delete_on_termination": true, "status": "attached", "volume_id": "vol-7f3b1ca3"}}, "dns_name": "ec2-54-165-254-213.compute-1.amazonaws.com", "ebs_optimized": false, "groups": {"sg-a293f9db": "gluster-demo-node"}, "hypervisor": "xen", "id": "i-619a9ee0", "image_id": "ami-2051294a", "instance_type": "m4.xlarge", "kernel": null, "key_name": "nsphexboard", "launch_time": "2016-01-19T02:37:35.000Z", "placement": "us-east-1c", "private_dns_name": "ip-172-18-2-194.ec2.internal", "private_ip": "172.18.2.194", "public_dns_name": "ec2-54-165-254-213.compute-1.amazonaws.com", "public_ip": "54.165.254.213", "ramdisk": null, "region": "us-east-1", "root_device_name": "/dev/sda1", "root_device_type": "ebs", "state": "running", "state_code": 16, "tags": {"Name": "gluster-demo", "gluster_side": "side_b"}, "tenancy": "default", "virtualization_type": "hvm"}]}
+
+TASK [Debug ec2 data structure] ************************************************
+ok: [localhost] => {
+    "ec2": {
+        "changed": false, 
+        "msg": "All items completed", 
+        "results": [
+            {
+                "_ansible_no_log": false, 
+                "changed": false, 
+                "instance_ids": null, 
+                "instances": [], 
+                "invocation": {
+                    "module_args": {
+                        "assign_public_ip": true, 
+                        "aws_access_key": null, 
+                        "aws_secret_key": null, 
+                        "count": 1, 
+                        "count_tag": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_a"
+                        }, 
+                        "ebs_optimized": false, 
+                        "ec2_url": null, 
+                        "exact_count": 4, 
+                        "group": null, 
+                        "group_id": [
+                            "sg-a293f9db"
+                        ], 
+                        "id": null, 
+                        "image": "ami-2051294a", 
+                        "instance_ids": null, 
+                        "instance_profile_name": null, 
+                        "instance_tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_a"
+                        }, 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "monitoring": false, 
+                        "network_interfaces": null, 
+                        "placement_group": null, 
+                        "private_ip": null, 
+                        "profile": null, 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "security_token": null, 
+                        "source_dest_check": true, 
+                        "spot_price": null, 
+                        "spot_type": "one-time", 
+                        "spot_wait_timeout": 600, 
+                        "state": "present", 
+                        "tenancy": "default", 
+                        "termination_protection": false, 
+                        "user_data": null, 
+                        "validate_certs": true, 
+                        "volumes": [
+                            {
+                                "delete_on_termination": true, 
+                                "device_name": "/dev/sda1", 
+                                "device_type": "gp2", 
+                                "volume_size": 10
+                            }, 
+                            {
+                                "delete_on_termination": true, 
+                                "device_name": "/dev/xvdb", 
+                                "device_type": "gp2", 
+                                "volume_size": 10
+                            }
+                        ], 
+                        "vpc_subnet_id": "subnet-6bb27633", 
+                        "wait": true, 
+                        "wait_timeout": 300, 
+                        "zone": null
+                    }, 
+                    "module_name": "ec2"
+                }, 
+                "item": {
+                    "side_tag": "side_a", 
+                    "subnet": "subnet-6bb27633"
+                }, 
+                "tagged_instances": [
+                    {
+                        "ami_launch_index": "0", 
+                        "architecture": "x86_64", 
+                        "block_device_mapping": {
+                            "/dev/sda1": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-5f5b90a3"
+                            }, 
+                            "/dev/xvdb": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-585b90a4"
+                            }
+                        }, 
+                        "dns_name": "ec2-54-209-35-103.compute-1.amazonaws.com", 
+                        "ebs_optimized": false, 
+                        "groups": {
+                            "sg-a293f9db": "gluster-demo-node"
+                        }, 
+                        "hypervisor": "xen", 
+                        "id": "i-d990ee6a", 
+                        "image_id": "ami-2051294a", 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "launch_time": "2016-01-19T02:37:01.000Z", 
+                        "placement": "us-east-1a", 
+                        "private_dns_name": "ip-172-18-1-233.ec2.internal", 
+                        "private_ip": "172.18.1.233", 
+                        "public_dns_name": "ec2-54-209-35-103.compute-1.amazonaws.com", 
+                        "public_ip": "54.209.35.103", 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "root_device_name": "/dev/sda1", 
+                        "root_device_type": "ebs", 
+                        "state": "running", 
+                        "state_code": 16, 
+                        "tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_a"
+                        }, 
+                        "tenancy": "default", 
+                        "virtualization_type": "hvm"
+                    }, 
+                    {
+                        "ami_launch_index": "1", 
+                        "architecture": "x86_64", 
+                        "block_device_mapping": {
+                            "/dev/sda1": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-865b907a"
+                            }, 
+                            "/dev/xvdb": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-455b90b9"
+                            }
+                        }, 
+                        "dns_name": "ec2-54-175-80-99.compute-1.amazonaws.com", 
+                        "ebs_optimized": false, 
+                        "groups": {
+                            "sg-a293f9db": "gluster-demo-node"
+                        }, 
+                        "hypervisor": "xen", 
+                        "id": "i-d890ee6b", 
+                        "image_id": "ami-2051294a", 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "launch_time": "2016-01-19T02:37:01.000Z", 
+                        "placement": "us-east-1a", 
+                        "private_dns_name": "ip-172-18-1-232.ec2.internal", 
+                        "private_ip": "172.18.1.232", 
+                        "public_dns_name": "ec2-54-175-80-99.compute-1.amazonaws.com", 
+                        "public_ip": "54.175.80.99", 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "root_device_name": "/dev/sda1", 
+                        "root_device_type": "ebs", 
+                        "state": "running", 
+                        "state_code": 16, 
+                        "tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_a"
+                        }, 
+                        "tenancy": "default", 
+                        "virtualization_type": "hvm"
+                    }, 
+                    {
+                        "ami_launch_index": "2", 
+                        "architecture": "x86_64", 
+                        "block_device_mapping": {
+                            "/dev/sda1": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-955b9069"
+                            }, 
+                            "/dev/xvdb": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-965b906a"
+                            }
+                        }, 
+                        "dns_name": "ec2-54-209-35-174.compute-1.amazonaws.com", 
+                        "ebs_optimized": false, 
+                        "groups": {
+                            "sg-a293f9db": "gluster-demo-node"
+                        }, 
+                        "hypervisor": "xen", 
+                        "id": "i-df90ee6c", 
+                        "image_id": "ami-2051294a", 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "launch_time": "2016-01-19T02:37:01.000Z", 
+                        "placement": "us-east-1a", 
+                        "private_dns_name": "ip-172-18-1-231.ec2.internal", 
+                        "private_ip": "172.18.1.231", 
+                        "public_dns_name": "ec2-54-209-35-174.compute-1.amazonaws.com", 
+                        "public_ip": "54.209.35.174", 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "root_device_name": "/dev/sda1", 
+                        "root_device_type": "ebs", 
+                        "state": "running", 
+                        "state_code": 16, 
+                        "tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_a"
+                        }, 
+                        "tenancy": "default", 
+                        "virtualization_type": "hvm"
+                    }, 
+                    {
+                        "ami_launch_index": "3", 
+                        "architecture": "x86_64", 
+                        "block_device_mapping": {
+                            "/dev/sda1": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-445b90b8"
+                            }, 
+                            "/dev/xvdb": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-735b908f"
+                            }
+                        }, 
+                        "dns_name": "ec2-54-88-30-186.compute-1.amazonaws.com", 
+                        "ebs_optimized": false, 
+                        "groups": {
+                            "sg-a293f9db": "gluster-demo-node"
+                        }, 
+                        "hypervisor": "xen", 
+                        "id": "i-de90ee6d", 
+                        "image_id": "ami-2051294a", 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "launch_time": "2016-01-19T02:37:01.000Z", 
+                        "placement": "us-east-1a", 
+                        "private_dns_name": "ip-172-18-1-230.ec2.internal", 
+                        "private_ip": "172.18.1.230", 
+                        "public_dns_name": "ec2-54-88-30-186.compute-1.amazonaws.com", 
+                        "public_ip": "54.88.30.186", 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "root_device_name": "/dev/sda1", 
+                        "root_device_type": "ebs", 
+                        "state": "running", 
+                        "state_code": 16, 
+                        "tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_a"
+                        }, 
+                        "tenancy": "default", 
+                        "virtualization_type": "hvm"
+                    }
+                ]
+            }, 
+            {
+                "_ansible_no_log": false, 
+                "changed": false, 
+                "instance_ids": null, 
+                "instances": [], 
+                "invocation": {
+                    "module_args": {
+                        "assign_public_ip": true, 
+                        "aws_access_key": null, 
+                        "aws_secret_key": null, 
+                        "count": 1, 
+                        "count_tag": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_b"
+                        }, 
+                        "ebs_optimized": false, 
+                        "ec2_url": null, 
+                        "exact_count": 4, 
+                        "group": null, 
+                        "group_id": [
+                            "sg-a293f9db"
+                        ], 
+                        "id": null, 
+                        "image": "ami-2051294a", 
+                        "instance_ids": null, 
+                        "instance_profile_name": null, 
+                        "instance_tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_b"
+                        }, 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "monitoring": false, 
+                        "network_interfaces": null, 
+                        "placement_group": null, 
+                        "private_ip": null, 
+                        "profile": null, 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "security_token": null, 
+                        "source_dest_check": true, 
+                        "spot_price": null, 
+                        "spot_type": "one-time", 
+                        "spot_wait_timeout": 600, 
+                        "state": "present", 
+                        "tenancy": "default", 
+                        "termination_protection": false, 
+                        "user_data": null, 
+                        "validate_certs": true, 
+                        "volumes": [
+                            {
+                                "delete_on_termination": true, 
+                                "device_name": "/dev/sda1", 
+                                "device_type": "gp2", 
+                                "volume_size": 10
+                            }, 
+                            {
+                                "delete_on_termination": true, 
+                                "device_name": "/dev/xvdb", 
+                                "device_type": "gp2", 
+                                "volume_size": 10
+                            }
+                        ], 
+                        "vpc_subnet_id": "subnet-3464951e", 
+                        "wait": true, 
+                        "wait_timeout": 300, 
+                        "zone": null
+                    }, 
+                    "module_name": "ec2"
+                }, 
+                "item": {
+                    "side_tag": "side_b", 
+                    "subnet": "subnet-3464951e"
+                }, 
+                "tagged_instances": [
+                    {
+                        "ami_launch_index": "2", 
+                        "architecture": "x86_64", 
+                        "block_device_mapping": {
+                            "/dev/sda1": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-d03a1d0c"
+                            }, 
+                            "/dev/xvdb": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-163b1cca"
+                            }
+                        }, 
+                        "dns_name": "ec2-54-86-144-35.compute-1.amazonaws.com", 
+                        "ebs_optimized": false, 
+                        "groups": {
+                            "sg-a293f9db": "gluster-demo-node"
+                        }, 
+                        "hypervisor": "xen", 
+                        "id": "i-559a9ed4", 
+                        "image_id": "ami-2051294a", 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "launch_time": "2016-01-19T02:37:35.000Z", 
+                        "placement": "us-east-1c", 
+                        "private_dns_name": "ip-172-18-2-195.ec2.internal", 
+                        "private_ip": "172.18.2.195", 
+                        "public_dns_name": "ec2-54-86-144-35.compute-1.amazonaws.com", 
+                        "public_ip": "54.86.144.35", 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "root_device_name": "/dev/sda1", 
+                        "root_device_type": "ebs", 
+                        "state": "running", 
+                        "state_code": 16, 
+                        "tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_b"
+                        }, 
+                        "tenancy": "default", 
+                        "virtualization_type": "hvm"
+                    }, 
+                    {
+                        "ami_launch_index": "1", 
+                        "architecture": "x86_64", 
+                        "block_device_mapping": {
+                            "/dev/sda1": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-153b1cc9"
+                            }, 
+                            "/dev/xvdb": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-443b1c98"
+                            }
+                        }, 
+                        "dns_name": "ec2-54-165-116-143.compute-1.amazonaws.com", 
+                        "ebs_optimized": false, 
+                        "groups": {
+                            "sg-a293f9db": "gluster-demo-node"
+                        }, 
+                        "hypervisor": "xen", 
+                        "id": "i-549a9ed5", 
+                        "image_id": "ami-2051294a", 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "launch_time": "2016-01-19T02:37:35.000Z", 
+                        "placement": "us-east-1c", 
+                        "private_dns_name": "ip-172-18-2-196.ec2.internal", 
+                        "private_ip": "172.18.2.196", 
+                        "public_dns_name": "ec2-54-165-116-143.compute-1.amazonaws.com", 
+                        "public_ip": "54.165.116.143", 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "root_device_name": "/dev/sda1", 
+                        "root_device_type": "ebs", 
+                        "state": "running", 
+                        "state_code": 16, 
+                        "tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_b"
+                        }, 
+                        "tenancy": "default", 
+                        "virtualization_type": "hvm"
+                    }, 
+                    {
+                        "ami_launch_index": "0", 
+                        "architecture": "x86_64", 
+                        "block_device_mapping": {
+                            "/dev/sda1": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-2e3b1cf2"
+                            }, 
+                            "/dev/xvdb": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-833b1c5f"
+                            }
+                        }, 
+                        "dns_name": "ec2-54-172-0-231.compute-1.amazonaws.com", 
+                        "ebs_optimized": false, 
+                        "groups": {
+                            "sg-a293f9db": "gluster-demo-node"
+                        }, 
+                        "hypervisor": "xen", 
+                        "id": "i-579a9ed6", 
+                        "image_id": "ami-2051294a", 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "launch_time": "2016-01-19T02:37:35.000Z", 
+                        "placement": "us-east-1c", 
+                        "private_dns_name": "ip-172-18-2-197.ec2.internal", 
+                        "private_ip": "172.18.2.197", 
+                        "public_dns_name": "ec2-54-172-0-231.compute-1.amazonaws.com", 
+                        "public_ip": "54.172.0.231", 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "root_device_name": "/dev/sda1", 
+                        "root_device_type": "ebs", 
+                        "state": "running", 
+                        "state_code": 16, 
+                        "tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_b"
+                        }, 
+                        "tenancy": "default", 
+                        "virtualization_type": "hvm"
+                    }, 
+                    {
+                        "ami_launch_index": "3", 
+                        "architecture": "x86_64", 
+                        "block_device_mapping": {
+                            "/dev/sda1": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-393b1ce5"
+                            }, 
+                            "/dev/xvdb": {
+                                "delete_on_termination": true, 
+                                "status": "attached", 
+                                "volume_id": "vol-7f3b1ca3"
+                            }
+                        }, 
+                        "dns_name": "ec2-54-165-254-213.compute-1.amazonaws.com", 
+                        "ebs_optimized": false, 
+                        "groups": {
+                            "sg-a293f9db": "gluster-demo-node"
+                        }, 
+                        "hypervisor": "xen", 
+                        "id": "i-619a9ee0", 
+                        "image_id": "ami-2051294a", 
+                        "instance_type": "m4.xlarge", 
+                        "kernel": null, 
+                        "key_name": "nsphexboard", 
+                        "launch_time": "2016-01-19T02:37:35.000Z", 
+                        "placement": "us-east-1c", 
+                        "private_dns_name": "ip-172-18-2-194.ec2.internal", 
+                        "private_ip": "172.18.2.194", 
+                        "public_dns_name": "ec2-54-165-254-213.compute-1.amazonaws.com", 
+                        "public_ip": "54.165.254.213", 
+                        "ramdisk": null, 
+                        "region": "us-east-1", 
+                        "root_device_name": "/dev/sda1", 
+                        "root_device_type": "ebs", 
+                        "state": "running", 
+                        "state_code": 16, 
+                        "tags": {
+                            "Name": "gluster-demo", 
+                            "gluster_side": "side_b"
+                        }, 
+                        "tenancy": "default", 
+                        "virtualization_type": "hvm"
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+TASK [Build new_servers data structure] ****************************************
+
+TASK [Debug new_servers data structure] ****************************************
+ok: [localhost] => {
+    "new_servers": "VARIABLE IS NOT DEFINED!"
+}
+
+TASK [Add hosts to ec2 group] **************************************************
+
+TASK [debug groups variable] ***************************************************
+ok: [localhost] => {
+    "groups": {
+        "all": [
+            "localhost", 
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "ami_2051294a": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "ec2": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "i-549a9ed5": [
+            "ec2-54-165-116-143.compute-1.amazonaws.com"
+        ], 
+        "i-559a9ed4": [
+            "ec2-54-86-144-35.compute-1.amazonaws.com"
+        ], 
+        "i-579a9ed6": [
+            "ec2-54-172-0-231.compute-1.amazonaws.com"
+        ], 
+        "i-619a9ee0": [
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "i-d890ee6b": [
+            "ec2-54-175-80-99.compute-1.amazonaws.com"
+        ], 
+        "i-d990ee6a": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com"
+        ], 
+        "i-de90ee6d": [
+            "ec2-54-88-30-186.compute-1.amazonaws.com"
+        ], 
+        "i-df90ee6c": [
+            "ec2-54-209-35-174.compute-1.amazonaws.com"
+        ], 
+        "key_nsphexboard": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "security_group_gluster_demo_node": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "tag_Name_gluster_demo": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "tag_gluster_side_side_a": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com"
+        ], 
+        "tag_gluster_side_side_b": [
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "type_m4_xlarge": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "ungrouped": [
+            "localhost"
+        ], 
+        "us-east-1": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "us-east-1a": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com"
+        ], 
+        "us-east-1c": [
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "vpc_id_vpc_b06a16d4": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ]
+    }
+}
+
+TASK [Wait for SSH to come up] *************************************************
+ok: [localhost] => (item=ec2-54-209-35-103.compute-1.amazonaws.com) => {"changed": false, "elapsed": 0, "item": "ec2-54-209-35-103.compute-1.amazonaws.com", "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [localhost] => (item=ec2-54-175-80-99.compute-1.amazonaws.com) => {"changed": false, "elapsed": 0, "item": "ec2-54-175-80-99.compute-1.amazonaws.com", "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [localhost] => (item=ec2-54-209-35-174.compute-1.amazonaws.com) => {"changed": false, "elapsed": 0, "item": "ec2-54-209-35-174.compute-1.amazonaws.com", "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [localhost] => (item=ec2-54-88-30-186.compute-1.amazonaws.com) => {"changed": false, "elapsed": 0, "item": "ec2-54-88-30-186.compute-1.amazonaws.com", "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [localhost] => (item=ec2-54-86-144-35.compute-1.amazonaws.com) => {"changed": false, "elapsed": 0, "item": "ec2-54-86-144-35.compute-1.amazonaws.com", "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [localhost] => (item=ec2-54-165-116-143.compute-1.amazonaws.com) => {"changed": false, "elapsed": 0, "item": "ec2-54-165-116-143.compute-1.amazonaws.com", "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [localhost] => (item=ec2-54-172-0-231.compute-1.amazonaws.com) => {"changed": false, "elapsed": 0, "item": "ec2-54-172-0-231.compute-1.amazonaws.com", "path": null, "port": 22, "search_regex": null, "state": "started"}
+ok: [localhost] => (item=ec2-54-165-254-213.compute-1.amazonaws.com) => {"changed": false, "elapsed": 0, "item": "ec2-54-165-254-213.compute-1.amazonaws.com", "path": null, "port": 22, "search_regex": null, "state": "started"}
+
+TASK [Wait for successful SSH] *************************************************
+changed: [localhost] => (item=ec2-54-209-35-103.compute-1.amazonaws.com) => {"changed": true, "cmd": ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "PasswordAuthentication=no", "-o", "ConnectTimeout=10", "-o", "UserKnownHostsFile=/dev/null", "ec2-user@ec2-54-209-35-103.compute-1.amazonaws.com", "echo", "host", "is", "up"], "delta": "0:00:00.354080", "end": "2016-01-19 09:52:39.658214", "item": "ec2-54-209-35-103.compute-1.amazonaws.com", "rc": 0, "start": "2016-01-19 09:52:39.304134", "stderr": "Warning: Permanently added 'ec2-54-209-35-103.compute-1.amazonaws.com,54.209.35.103' (ECDSA) to the list of known hosts.", "stdout": "host is up", "stdout_lines": ["host is up"], "warnings": []}
+changed: [localhost] => (item=ec2-54-175-80-99.compute-1.amazonaws.com) => {"changed": true, "cmd": ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "PasswordAuthentication=no", "-o", "ConnectTimeout=10", "-o", "UserKnownHostsFile=/dev/null", "ec2-user@ec2-54-175-80-99.compute-1.amazonaws.com", "echo", "host", "is", "up"], "delta": "0:00:00.359579", "end": "2016-01-19 09:52:40.104058", "item": "ec2-54-175-80-99.compute-1.amazonaws.com", "rc": 0, "start": "2016-01-19 09:52:39.744479", "stderr": "Warning: Permanently added 'ec2-54-175-80-99.compute-1.amazonaws.com,54.175.80.99' (ECDSA) to the list of known hosts.", "stdout": "host is up", "stdout_lines": ["host is up"], "warnings": []}
+changed: [localhost] => (item=ec2-54-209-35-174.compute-1.amazonaws.com) => {"changed": true, "cmd": ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "PasswordAuthentication=no", "-o", "ConnectTimeout=10", "-o", "UserKnownHostsFile=/dev/null", "ec2-user@ec2-54-209-35-174.compute-1.amazonaws.com", "echo", "host", "is", "up"], "delta": "0:00:00.358102", "end": "2016-01-19 09:52:40.551533", "item": "ec2-54-209-35-174.compute-1.amazonaws.com", "rc": 0, "start": "2016-01-19 09:52:40.193431", "stderr": "Warning: Permanently added 'ec2-54-209-35-174.compute-1.amazonaws.com,54.209.35.174' (ECDSA) to the list of known hosts.", "stdout": "host is up", "stdout_lines": ["host is up"], "warnings": []}
+changed: [localhost] => (item=ec2-54-88-30-186.compute-1.amazonaws.com) => {"changed": true, "cmd": ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "PasswordAuthentication=no", "-o", "ConnectTimeout=10", "-o", "UserKnownHostsFile=/dev/null", "ec2-user@ec2-54-88-30-186.compute-1.amazonaws.com", "echo", "host", "is", "up"], "delta": "0:00:00.341452", "end": "2016-01-19 09:52:40.982087", "item": "ec2-54-88-30-186.compute-1.amazonaws.com", "rc": 0, "start": "2016-01-19 09:52:40.640635", "stderr": "Warning: Permanently added 'ec2-54-88-30-186.compute-1.amazonaws.com,54.88.30.186' (ECDSA) to the list of known hosts.", "stdout": "host is up", "stdout_lines": ["host is up"], "warnings": []}
+changed: [localhost] => (item=ec2-54-86-144-35.compute-1.amazonaws.com) => {"changed": true, "cmd": ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "PasswordAuthentication=no", "-o", "ConnectTimeout=10", "-o", "UserKnownHostsFile=/dev/null", "ec2-user@ec2-54-86-144-35.compute-1.amazonaws.com", "echo", "host", "is", "up"], "delta": "0:00:00.347215", "end": "2016-01-19 09:52:41.419120", "item": "ec2-54-86-144-35.compute-1.amazonaws.com", "rc": 0, "start": "2016-01-19 09:52:41.071905", "stderr": "Warning: Permanently added 'ec2-54-86-144-35.compute-1.amazonaws.com,54.86.144.35' (ECDSA) to the list of known hosts.", "stdout": "host is up", "stdout_lines": ["host is up"], "warnings": []}
+changed: [localhost] => (item=ec2-54-165-116-143.compute-1.amazonaws.com) => {"changed": true, "cmd": ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "PasswordAuthentication=no", "-o", "ConnectTimeout=10", "-o", "UserKnownHostsFile=/dev/null", "ec2-user@ec2-54-165-116-143.compute-1.amazonaws.com", "echo", "host", "is", "up"], "delta": "0:00:00.340179", "end": "2016-01-19 09:52:41.846531", "item": "ec2-54-165-116-143.compute-1.amazonaws.com", "rc": 0, "start": "2016-01-19 09:52:41.506352", "stderr": "Warning: Permanently added 'ec2-54-165-116-143.compute-1.amazonaws.com,54.165.116.143' (ECDSA) to the list of known hosts.", "stdout": "host is up", "stdout_lines": ["host is up"], "warnings": []}
+changed: [localhost] => (item=ec2-54-172-0-231.compute-1.amazonaws.com) => {"changed": true, "cmd": ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "PasswordAuthentication=no", "-o", "ConnectTimeout=10", "-o", "UserKnownHostsFile=/dev/null", "ec2-user@ec2-54-172-0-231.compute-1.amazonaws.com", "echo", "host", "is", "up"], "delta": "0:00:00.348802", "end": "2016-01-19 09:52:42.282900", "item": "ec2-54-172-0-231.compute-1.amazonaws.com", "rc": 0, "start": "2016-01-19 09:52:41.934098", "stderr": "Warning: Permanently added 'ec2-54-172-0-231.compute-1.amazonaws.com,54.172.0.231' (ECDSA) to the list of known hosts.", "stdout": "host is up", "stdout_lines": ["host is up"], "warnings": []}
+changed: [localhost] => (item=ec2-54-165-254-213.compute-1.amazonaws.com) => {"changed": true, "cmd": ["ssh", "-o", "StrictHostKeyChecking=no", "-o", "PasswordAuthentication=no", "-o", "ConnectTimeout=10", "-o", "UserKnownHostsFile=/dev/null", "ec2-user@ec2-54-165-254-213.compute-1.amazonaws.com", "echo", "host", "is", "up"], "delta": "0:00:00.366052", "end": "2016-01-19 09:52:42.734113", "item": "ec2-54-165-254-213.compute-1.amazonaws.com", "rc": 0, "start": "2016-01-19 09:52:42.368061", "stderr": "Warning: Permanently added 'ec2-54-165-254-213.compute-1.amazonaws.com,54.165.254.213' (ECDSA) to the list of known hosts.", "stdout": "host is up", "stdout_lines": ["host is up"], "warnings": []}
+
+PLAY [Update security group rules] *********************************************
+
+TASK [setup] *******************************************************************
+ok: [localhost]
+
+TASK [debug groups] ************************************************************
+ok: [localhost] => {
+    "groups": {
+        "all": [
+            "localhost", 
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "ami_2051294a": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "ec2": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "i-549a9ed5": [
+            "ec2-54-165-116-143.compute-1.amazonaws.com"
+        ], 
+        "i-559a9ed4": [
+            "ec2-54-86-144-35.compute-1.amazonaws.com"
+        ], 
+        "i-579a9ed6": [
+            "ec2-54-172-0-231.compute-1.amazonaws.com"
+        ], 
+        "i-619a9ee0": [
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "i-d890ee6b": [
+            "ec2-54-175-80-99.compute-1.amazonaws.com"
+        ], 
+        "i-d990ee6a": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com"
+        ], 
+        "i-de90ee6d": [
+            "ec2-54-88-30-186.compute-1.amazonaws.com"
+        ], 
+        "i-df90ee6c": [
+            "ec2-54-209-35-174.compute-1.amazonaws.com"
+        ], 
+        "key_nsphexboard": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "security_group_gluster_demo_node": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "tag_Name_gluster_demo": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "tag_gluster_side_side_a": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com"
+        ], 
+        "tag_gluster_side_side_b": [
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "type_m4_xlarge": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "ungrouped": [
+            "localhost"
+        ], 
+        "us-east-1": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "us-east-1a": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com"
+        ], 
+        "us-east-1c": [
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ], 
+        "vpc_id_vpc_b06a16d4": [
+            "ec2-54-209-35-103.compute-1.amazonaws.com", 
+            "ec2-54-175-80-99.compute-1.amazonaws.com", 
+            "ec2-54-209-35-174.compute-1.amazonaws.com", 
+            "ec2-54-88-30-186.compute-1.amazonaws.com", 
+            "ec2-54-86-144-35.compute-1.amazonaws.com", 
+            "ec2-54-165-116-143.compute-1.amazonaws.com", 
+            "ec2-54-172-0-231.compute-1.amazonaws.com", 
+            "ec2-54-165-254-213.compute-1.amazonaws.com"
+        ]
+    }
+}
+
+TASK [Run sg template] *********************************************************
+ok: [localhost] => {"changed": false, "gid": 20, "group": "staff", "mode": "0644", "owner": "jason", "path": "./rules.yaml", "size": 772, "state": "file", "uid": 501}
+
+TASK [Load sg vars] ************************************************************
+ok: [localhost] => {"ansible_facts": {"security_rules": [{"cidr_ip": "0.0.0.0/0", "from_port": 22, "proto": "tcp", "to_port": 22}, {"cidr_ip": "54.209.35.103/32", "from_port": -1, "proto": "all", "to_port": -1}, {"cidr_ip": "54.175.80.99/32", "from_port": -1, "proto": "all", "to_port": -1}, {"cidr_ip": "54.209.35.174/32", "from_port": -1, "proto": "all", "to_port": -1}, {"cidr_ip": "54.88.30.186/32", "from_port": -1, "proto": "all", "to_port": -1}, {"cidr_ip": "54.86.144.35/32", "from_port": -1, "proto": "all", "to_port": -1}, {"cidr_ip": "54.165.116.143/32", "from_port": -1, "proto": "all", "to_port": -1}, {"cidr_ip": "54.172.0.231/32", "from_port": -1, "proto": "all", "to_port": -1}, {"cidr_ip": "54.165.254.213/32", "from_port": -1, "proto": "all", "to_port": -1}, {"group_name": "gluster-demo-node", "proto": "all"}]}, "changed": false}
+
+TASK [debug sg vars] ***********************************************************
+ok: [localhost] => {
+    "security_rules": [
+        {
+            "cidr_ip": "0.0.0.0/0", 
+            "from_port": 22, 
+            "proto": "tcp", 
+            "to_port": 22
+        }, 
+        {
+            "cidr_ip": "54.209.35.103/32", 
+            "from_port": -1, 
+            "proto": "all", 
+            "to_port": -1
+        }, 
+        {
+            "cidr_ip": "54.175.80.99/32", 
+            "from_port": -1, 
+            "proto": "all", 
+            "to_port": -1
+        }, 
+        {
+            "cidr_ip": "54.209.35.174/32", 
+            "from_port": -1, 
+            "proto": "all", 
+            "to_port": -1
+        }, 
+        {
+            "cidr_ip": "54.88.30.186/32", 
+            "from_port": -1, 
+            "proto": "all", 
+            "to_port": -1
+        }, 
+        {
+            "cidr_ip": "54.86.144.35/32", 
+            "from_port": -1, 
+            "proto": "all", 
+            "to_port": -1
+        }, 
+        {
+            "cidr_ip": "54.165.116.143/32", 
+            "from_port": -1, 
+            "proto": "all", 
+            "to_port": -1
+        }, 
+        {
+            "cidr_ip": "54.172.0.231/32", 
+            "from_port": -1, 
+            "proto": "all", 
+            "to_port": -1
+        }, 
+        {
+            "cidr_ip": "54.165.254.213/32", 
+            "from_port": -1, 
+            "proto": "all", 
+            "to_port": -1
+        }, 
+        {
+            "group_name": "gluster-demo-node", 
+            "proto": "all"
+        }
+    ]
+}
+
+TASK [Update rules] ************************************************************
+changed: [localhost] => {"changed": true, "group_id": "sg-a293f9db"}
+
+PLAY [Configure the nodes] *****************************************************
+
+TASK [Debug ec2 host group] ****************************************************
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {
+    "groups.ec2": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {
+    "groups.ec2": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {
+    "groups.ec2": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {
+    "groups.ec2": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {
+    "groups.ec2": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {
+    "groups.ec2": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {
+    "groups.ec2": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {
+    "groups.ec2": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+
+TASK [Copy partition script] ***************************************************
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "checksum": "6c45042921cd960170b9475845a7752879cdcbd9", "dest": "/tmp/partition.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/partition.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 108, "state": "file", "uid": 0}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "checksum": "6c45042921cd960170b9475845a7752879cdcbd9", "dest": "/tmp/partition.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/partition.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 108, "state": "file", "uid": 0}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "checksum": "6c45042921cd960170b9475845a7752879cdcbd9", "dest": "/tmp/partition.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/partition.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 108, "state": "file", "uid": 0}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "checksum": "6c45042921cd960170b9475845a7752879cdcbd9", "dest": "/tmp/partition.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/partition.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 108, "state": "file", "uid": 0}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "checksum": "6c45042921cd960170b9475845a7752879cdcbd9", "dest": "/tmp/partition.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/partition.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 108, "state": "file", "uid": 0}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "checksum": "6c45042921cd960170b9475845a7752879cdcbd9", "dest": "/tmp/partition.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/partition.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 108, "state": "file", "uid": 0}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "checksum": "6c45042921cd960170b9475845a7752879cdcbd9", "dest": "/tmp/partition.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/partition.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 108, "state": "file", "uid": 0}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "checksum": "6c45042921cd960170b9475845a7752879cdcbd9", "dest": "/tmp/partition.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/partition.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 108, "state": "file", "uid": 0}
+
+TASK [Execute the partition script] ********************************************
+changed: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/partition.sh", "delta": "0:00:00.002992", "end": "2016-01-19 09:52:44.962868", "rc": 0, "start": "2016-01-19 09:52:44.959876", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+changed: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/partition.sh", "delta": "0:00:00.003193", "end": "2016-01-19 09:52:44.968707", "rc": 0, "start": "2016-01-19 09:52:44.965514", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+changed: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/partition.sh", "delta": "0:00:00.002912", "end": "2016-01-19 09:52:44.980918", "rc": 0, "start": "2016-01-19 09:52:44.978006", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+changed: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/partition.sh", "delta": "0:00:00.003016", "end": "2016-01-19 09:52:44.971084", "rc": 0, "start": "2016-01-19 09:52:44.968068", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+changed: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/partition.sh", "delta": "0:00:00.003241", "end": "2016-01-19 09:52:44.969787", "rc": 0, "start": "2016-01-19 09:52:44.966546", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+changed: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/partition.sh", "delta": "0:00:00.003358", "end": "2016-01-19 09:52:44.973239", "rc": 0, "start": "2016-01-19 09:52:44.969881", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+changed: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/partition.sh", "delta": "0:00:00.003136", "end": "2016-01-19 09:52:44.998431", "rc": 0, "start": "2016-01-19 09:52:44.995295", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+changed: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/partition.sh", "delta": "0:00:00.003008", "end": "2016-01-19 09:52:45.019921", "rc": 0, "start": "2016-01-19 09:52:45.016913", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+
+TASK [Format EBS volume] *******************************************************
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false}
+
+TASK [Make the bricks directory] ***********************************************
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1", "secontext": "system_u:object_r:unlabeled_t:s0", "size": 18, "state": "directory", "uid": 0}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1", "secontext": "system_u:object_r:unlabeled_t:s0", "size": 18, "state": "directory", "uid": 0}
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1", "secontext": "system_u:object_r:unlabeled_t:s0", "size": 18, "state": "directory", "uid": 0}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1", "secontext": "system_u:object_r:unlabeled_t:s0", "size": 18, "state": "directory", "uid": 0}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1", "secontext": "system_u:object_r:unlabeled_t:s0", "size": 18, "state": "directory", "uid": 0}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1", "secontext": "system_u:object_r:unlabeled_t:s0", "size": 18, "state": "directory", "uid": 0}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1", "secontext": "system_u:object_r:unlabeled_t:s0", "size": 18, "state": "directory", "uid": 0}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1", "secontext": "system_u:object_r:unlabeled_t:s0", "size": 18, "state": "directory", "uid": 0}
+
+TASK [Mount the volume] ********************************************************
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "fstab": "/etc/fstab", "fstype": "xfs", "name": "/bricks/brick1", "src": "/dev/xvdb1"}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "fstab": "/etc/fstab", "fstype": "xfs", "name": "/bricks/brick1", "src": "/dev/xvdb1"}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "fstab": "/etc/fstab", "fstype": "xfs", "name": "/bricks/brick1", "src": "/dev/xvdb1"}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "fstab": "/etc/fstab", "fstype": "xfs", "name": "/bricks/brick1", "src": "/dev/xvdb1"}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "fstab": "/etc/fstab", "fstype": "xfs", "name": "/bricks/brick1", "src": "/dev/xvdb1"}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "fstab": "/etc/fstab", "fstype": "xfs", "name": "/bricks/brick1", "src": "/dev/xvdb1"}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "fstab": "/etc/fstab", "fstype": "xfs", "name": "/bricks/brick1", "src": "/dev/xvdb1"}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "fstab": "/etc/fstab", "fstype": "xfs", "name": "/bricks/brick1", "src": "/dev/xvdb1"}
+
+TASK [Create the brick sub-directory] ******************************************
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1/brick", "secontext": "unconfined_u:object_r:unlabeled_t:s0", "size": 39, "state": "directory", "uid": 0}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1/brick", "secontext": "unconfined_u:object_r:unlabeled_t:s0", "size": 39, "state": "directory", "uid": 0}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1/brick", "secontext": "unconfined_u:object_r:unlabeled_t:s0", "size": 39, "state": "directory", "uid": 0}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1/brick", "secontext": "unconfined_u:object_r:unlabeled_t:s0", "size": 39, "state": "directory", "uid": 0}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1/brick", "secontext": "unconfined_u:object_r:unlabeled_t:s0", "size": 39, "state": "directory", "uid": 0}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1/brick", "secontext": "unconfined_u:object_r:unlabeled_t:s0", "size": 39, "state": "directory", "uid": 0}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1/brick", "secontext": "unconfined_u:object_r:unlabeled_t:s0", "size": 39, "state": "directory", "uid": 0}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "owner": "root", "path": "/bricks/brick1/brick", "secontext": "unconfined_u:object_r:unlabeled_t:s0", "size": 39, "state": "directory", "uid": 0}
+
+PLAY [Gluster installation] ****************************************************
+
+TASK [setup] *******************************************************************
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com]
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com]
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com]
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com]
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com]
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com]
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com]
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com]
+
+TASK [Install EPEL repo] *******************************************************
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "msg": "", "rc": 0, "results": ["https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm: Nothing to do"]}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "msg": "", "rc": 0, "results": ["https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm: Nothing to do"]}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "msg": "", "rc": 0, "results": ["https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm: Nothing to do"]}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "msg": "", "rc": 0, "results": ["https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm: Nothing to do"]}
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "msg": "", "rc": 0, "results": ["https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm: Nothing to do"]}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "msg": "", "rc": 0, "results": ["https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm: Nothing to do"]}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "msg": "", "rc": 0, "results": ["https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm: Nothing to do"]}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "msg": "", "rc": 0, "results": ["https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm: Nothing to do"]}
+
+TASK [Fetch glusterfs repo file] ***********************************************
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "dest": "/etc/yum.repos.d/glusterfs-epel.repo", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0, "url": "http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo"}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "dest": "/etc/yum.repos.d/glusterfs-epel.repo", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0, "url": "http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo"}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "dest": "/etc/yum.repos.d/glusterfs-epel.repo", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0, "url": "http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo"}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "dest": "/etc/yum.repos.d/glusterfs-epel.repo", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0, "url": "http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo"}
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "dest": "/etc/yum.repos.d/glusterfs-epel.repo", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0, "url": "http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo"}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "dest": "/etc/yum.repos.d/glusterfs-epel.repo", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0, "url": "http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo"}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "dest": "/etc/yum.repos.d/glusterfs-epel.repo", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0, "url": "http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo"}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "dest": "/etc/yum.repos.d/glusterfs-epel.repo", "gid": 0, "group": "root", "mode": "0644", "msg": "file already exists", "owner": "root", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0, "url": "http://download.gluster.org/pub/gluster/glusterfs/LATEST/EPEL.repo/glusterfs-epel.repo"}
+
+TASK [Set repo file permissions] ***********************************************
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/etc/yum.repos.d/glusterfs-epel.repo", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/etc/yum.repos.d/glusterfs-epel.repo", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/etc/yum.repos.d/glusterfs-epel.repo", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/etc/yum.repos.d/glusterfs-epel.repo", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/etc/yum.repos.d/glusterfs-epel.repo", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/etc/yum.repos.d/glusterfs-epel.repo", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/etc/yum.repos.d/glusterfs-epel.repo", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "gid": 0, "group": "root", "mode": "0644", "owner": "root", "path": "/etc/yum.repos.d/glusterfs-epel.repo", "secontext": "unconfined_u:object_r:system_conf_t:s0", "size": 1049, "state": "file", "uid": 0}
+
+TASK [Install glusterfs server packages] ***************************************
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => (item=[u'glusterfs-server', u'glusterfs-client', u'attr']) => {"changed": false, "item": ["glusterfs-server", "glusterfs-client", "attr"], "msg": "", "rc": 0, "results": ["glusterfs-server-3.7.6-1.el7.x86_64 providing glusterfs-server is already installed", "glusterfs-fuse-3.7.6-1.el7.x86_64 providing glusterfs-client is already installed", "attr-2.4.46-12.el7.x86_64 providing attr is already installed"]}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => (item=[u'glusterfs-server', u'glusterfs-client', u'attr']) => {"changed": false, "item": ["glusterfs-server", "glusterfs-client", "attr"], "msg": "", "rc": 0, "results": ["glusterfs-server-3.7.6-1.el7.x86_64 providing glusterfs-server is already installed", "glusterfs-fuse-3.7.6-1.el7.x86_64 providing glusterfs-client is already installed", "attr-2.4.46-12.el7.x86_64 providing attr is already installed"]}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => (item=[u'glusterfs-server', u'glusterfs-client', u'attr']) => {"changed": false, "item": ["glusterfs-server", "glusterfs-client", "attr"], "msg": "", "rc": 0, "results": ["glusterfs-server-3.7.6-1.el7.x86_64 providing glusterfs-server is already installed", "glusterfs-fuse-3.7.6-1.el7.x86_64 providing glusterfs-client is already installed", "attr-2.4.46-12.el7.x86_64 providing attr is already installed"]}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => (item=[u'glusterfs-server', u'glusterfs-client', u'attr']) => {"changed": false, "item": ["glusterfs-server", "glusterfs-client", "attr"], "msg": "", "rc": 0, "results": ["glusterfs-server-3.7.6-1.el7.x86_64 providing glusterfs-server is already installed", "glusterfs-fuse-3.7.6-1.el7.x86_64 providing glusterfs-client is already installed", "attr-2.4.46-12.el7.x86_64 providing attr is already installed"]}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => (item=[u'glusterfs-server', u'glusterfs-client', u'attr']) => {"changed": false, "item": ["glusterfs-server", "glusterfs-client", "attr"], "msg": "", "rc": 0, "results": ["glusterfs-server-3.7.6-1.el7.x86_64 providing glusterfs-server is already installed", "glusterfs-fuse-3.7.6-1.el7.x86_64 providing glusterfs-client is already installed", "attr-2.4.46-12.el7.x86_64 providing attr is already installed"]}
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => (item=[u'glusterfs-server', u'glusterfs-client', u'attr']) => {"changed": false, "item": ["glusterfs-server", "glusterfs-client", "attr"], "msg": "", "rc": 0, "results": ["glusterfs-server-3.7.6-1.el7.x86_64 providing glusterfs-server is already installed", "glusterfs-fuse-3.7.6-1.el7.x86_64 providing glusterfs-client is already installed", "attr-2.4.46-12.el7.x86_64 providing attr is already installed"]}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => (item=[u'glusterfs-server', u'glusterfs-client', u'attr']) => {"changed": false, "item": ["glusterfs-server", "glusterfs-client", "attr"], "msg": "", "rc": 0, "results": ["glusterfs-server-3.7.6-1.el7.x86_64 providing glusterfs-server is already installed", "glusterfs-fuse-3.7.6-1.el7.x86_64 providing glusterfs-client is already installed", "attr-2.4.46-12.el7.x86_64 providing attr is already installed"]}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => (item=[u'glusterfs-server', u'glusterfs-client', u'attr']) => {"changed": false, "item": ["glusterfs-server", "glusterfs-client", "attr"], "msg": "", "rc": 0, "results": ["glusterfs-server-3.7.6-1.el7.x86_64 providing glusterfs-server is already installed", "glusterfs-fuse-3.7.6-1.el7.x86_64 providing glusterfs-client is already installed", "attr-2.4.46-12.el7.x86_64 providing attr is already installed"]}
+
+TASK [Ensure the GlusterFS service is running] *********************************
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "name": "glusterd", "state": "started"}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "name": "glusterd", "state": "started"}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "name": "glusterd", "state": "started"}
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "name": "glusterd", "state": "started"}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "name": "glusterd", "state": "started"}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "name": "glusterd", "state": "started"}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "name": "glusterd", "state": "started"}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "name": "glusterd", "state": "started"}
+
+PLAY RECAP *********************************************************************
+ec2-54-165-116-143.compute-1.amazonaws.com : ok=13   changed=1    unreachable=0    failed=0   
+ec2-54-165-254-213.compute-1.amazonaws.com : ok=13   changed=1    unreachable=0    failed=0   
+ec2-54-172-0-231.compute-1.amazonaws.com : ok=13   changed=1    unreachable=0    failed=0   
+ec2-54-175-80-99.compute-1.amazonaws.com : ok=13   changed=1    unreachable=0    failed=0   
+ec2-54-209-35-103.compute-1.amazonaws.com : ok=13   changed=1    unreachable=0    failed=0   
+ec2-54-209-35-174.compute-1.amazonaws.com : ok=13   changed=1    unreachable=0    failed=0   
+ec2-54-86-144-35.compute-1.amazonaws.com : ok=13   changed=1    unreachable=0    failed=0   
+ec2-54-88-30-186.compute-1.amazonaws.com : ok=13   changed=1    unreachable=0    failed=0   
+localhost                  : ok=17   changed=3    unreachable=0    failed=0   
+
+Refreshing EC2 cache (2 of 2)...{
+  "_meta": {
+    "hostvars": {
+      "ec2-54-165-116-143.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "1", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-549a9ed5", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.165.116.143", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:35.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1c", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-2-196.ec2.internal", 
+        "ec2_private_ip_address": "172.18.2.196", 
+        "ec2_public_dns_name": "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-3464951e", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_b", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-165-254-213.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "3", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-165-254-213.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-619a9ee0", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.165.254.213", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:35.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1c", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-2-194.ec2.internal", 
+        "ec2_private_ip_address": "172.18.2.194", 
+        "ec2_public_dns_name": "ec2-54-165-254-213.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-3464951e", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_b", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-172-0-231.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-579a9ed6", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.172.0.231", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:35.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1c", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-2-197.ec2.internal", 
+        "ec2_private_ip_address": "172.18.2.197", 
+        "ec2_public_dns_name": "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-3464951e", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_b", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-175-80-99.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "1", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-d890ee6b", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.175.80.99", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:01.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-1-232.ec2.internal", 
+        "ec2_private_ip_address": "172.18.1.232", 
+        "ec2_public_dns_name": "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-6bb27633", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_a", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-209-35-103.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-d990ee6a", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.209.35.103", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:01.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-1-233.ec2.internal", 
+        "ec2_private_ip_address": "172.18.1.233", 
+        "ec2_public_dns_name": "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-6bb27633", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_a", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-209-35-174.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "2", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-df90ee6c", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.209.35.174", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:01.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-1-231.ec2.internal", 
+        "ec2_private_ip_address": "172.18.1.231", 
+        "ec2_public_dns_name": "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-6bb27633", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_a", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-86-144-35.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "2", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-559a9ed4", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.86.144.35", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:35.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1c", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-2-195.ec2.internal", 
+        "ec2_private_ip_address": "172.18.2.195", 
+        "ec2_public_dns_name": "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-3464951e", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_b", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }, 
+      "ec2-54-88-30-186.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "3", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "", 
+        "ec2_dns_name": "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-de90ee6d", 
+        "ec2_image_id": "ami-2051294a", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m4.xlarge", 
+        "ec2_ip_address": "54.88.30.186", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "nsphexboard", 
+        "ec2_launch_time": "2016-01-19T02:37:01.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-east-1a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-18-1-230.ec2.internal", 
+        "ec2_private_ip_address": "172.18.1.230", 
+        "ec2_public_dns_name": "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-a293f9db", 
+        "ec2_security_group_names": "gluster-demo-node", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-6bb27633", 
+        "ec2_tag_Name": "gluster-demo", 
+        "ec2_tag_gluster_side": "side_a", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-b06a16d4"
+      }
+    }
+  }, 
+  "ami_2051294a": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "ec2": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "i-549a9ed5": [
+    "ec2-54-165-116-143.compute-1.amazonaws.com"
+  ], 
+  "i-559a9ed4": [
+    "ec2-54-86-144-35.compute-1.amazonaws.com"
+  ], 
+  "i-579a9ed6": [
+    "ec2-54-172-0-231.compute-1.amazonaws.com"
+  ], 
+  "i-619a9ee0": [
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "i-d890ee6b": [
+    "ec2-54-175-80-99.compute-1.amazonaws.com"
+  ], 
+  "i-d990ee6a": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com"
+  ], 
+  "i-de90ee6d": [
+    "ec2-54-88-30-186.compute-1.amazonaws.com"
+  ], 
+  "i-df90ee6c": [
+    "ec2-54-209-35-174.compute-1.amazonaws.com"
+  ], 
+  "key_nsphexboard": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "security_group_gluster_demo_node": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "tag_Name_gluster_demo": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "tag_gluster_side_side_a": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com"
+  ], 
+  "tag_gluster_side_side_b": [
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "type_m4_xlarge": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "us-east-1": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "us-east-1a": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com"
+  ], 
+  "us-east-1c": [
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ], 
+  "vpc_id_vpc_b06a16d4": [
+    "ec2-54-209-35-103.compute-1.amazonaws.com", 
+    "ec2-54-175-80-99.compute-1.amazonaws.com", 
+    "ec2-54-209-35-174.compute-1.amazonaws.com", 
+    "ec2-54-88-30-186.compute-1.amazonaws.com", 
+    "ec2-54-86-144-35.compute-1.amazonaws.com", 
+    "ec2-54-165-116-143.compute-1.amazonaws.com", 
+    "ec2-54-172-0-231.compute-1.amazonaws.com", 
+    "ec2-54-165-254-213.compute-1.amazonaws.com"
+  ]
+}
+done
+Using /Users/jason/PycharmProjects/gluster-ansible/ansible.cfg as config file
+
+PLAY ***************************************************************************
+
+PLAY [Prep for Gluster setup] **************************************************
+
+TASK [setup] *******************************************************************
+ok: [localhost]
+
+TASK [Build host list data structure] ******************************************
+ok: [localhost] => (item=[u'ec2-54-209-35-103.compute-1.amazonaws.com', u'ec2-54-86-144-35.compute-1.amazonaws.com']) => {"ansible_facts": {"gluster_server_list": ["ec2-54-209-35-103.compute-1.amazonaws.com", "ec2-54-86-144-35.compute-1.amazonaws.com"]}, "changed": false, "item": ["ec2-54-209-35-103.compute-1.amazonaws.com", "ec2-54-86-144-35.compute-1.amazonaws.com"]}
+ok: [localhost] => (item=[u'ec2-54-175-80-99.compute-1.amazonaws.com', u'ec2-54-165-116-143.compute-1.amazonaws.com']) => {"ansible_facts": {"gluster_server_list": ["ec2-54-209-35-103.compute-1.amazonaws.com", "ec2-54-86-144-35.compute-1.amazonaws.com", "ec2-54-175-80-99.compute-1.amazonaws.com", "ec2-54-165-116-143.compute-1.amazonaws.com"]}, "changed": false, "item": ["ec2-54-175-80-99.compute-1.amazonaws.com", "ec2-54-165-116-143.compute-1.amazonaws.com"]}
+ok: [localhost] => (item=[u'ec2-54-209-35-174.compute-1.amazonaws.com', u'ec2-54-172-0-231.compute-1.amazonaws.com']) => {"ansible_facts": {"gluster_server_list": ["ec2-54-209-35-103.compute-1.amazonaws.com", "ec2-54-86-144-35.compute-1.amazonaws.com", "ec2-54-175-80-99.compute-1.amazonaws.com", "ec2-54-165-116-143.compute-1.amazonaws.com", "ec2-54-209-35-174.compute-1.amazonaws.com", "ec2-54-172-0-231.compute-1.amazonaws.com"]}, "changed": false, "item": ["ec2-54-209-35-174.compute-1.amazonaws.com", "ec2-54-172-0-231.compute-1.amazonaws.com"]}
+ok: [localhost] => (item=[u'ec2-54-88-30-186.compute-1.amazonaws.com', u'ec2-54-165-254-213.compute-1.amazonaws.com']) => {"ansible_facts": {"gluster_server_list": ["ec2-54-209-35-103.compute-1.amazonaws.com", "ec2-54-86-144-35.compute-1.amazonaws.com", "ec2-54-175-80-99.compute-1.amazonaws.com", "ec2-54-165-116-143.compute-1.amazonaws.com", "ec2-54-209-35-174.compute-1.amazonaws.com", "ec2-54-172-0-231.compute-1.amazonaws.com", "ec2-54-88-30-186.compute-1.amazonaws.com", "ec2-54-165-254-213.compute-1.amazonaws.com"]}, "changed": false, "item": ["ec2-54-88-30-186.compute-1.amazonaws.com", "ec2-54-165-254-213.compute-1.amazonaws.com"]}
+
+TASK [Debug the newly created host list] ***************************************
+ok: [localhost] => {
+    "gluster_server_list": [
+        "ec2-54-209-35-103.compute-1.amazonaws.com", 
+        "ec2-54-86-144-35.compute-1.amazonaws.com", 
+        "ec2-54-175-80-99.compute-1.amazonaws.com", 
+        "ec2-54-165-116-143.compute-1.amazonaws.com", 
+        "ec2-54-209-35-174.compute-1.amazonaws.com", 
+        "ec2-54-172-0-231.compute-1.amazonaws.com", 
+        "ec2-54-88-30-186.compute-1.amazonaws.com", 
+        "ec2-54-165-254-213.compute-1.amazonaws.com"
+    ]
+}
+
+TASK [Create gluster_peer.sh script] *******************************************
+ok: [localhost] => {"changed": false, "gid": 20, "group": "staff", "mode": "0644", "owner": "jason", "path": "./gluster_peer.sh", "size": 499, "state": "file", "uid": 501}
+
+TASK [Create gluster_create.sh script] *****************************************
+ok: [localhost] => {"changed": false, "gid": 20, "group": "staff", "mode": "0644", "owner": "jason", "path": "./gluster_create.sh", "size": 677, "state": "file", "uid": 501}
+
+PLAY [Gluster setup] ***********************************************************
+
+TASK [setup] *******************************************************************
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com]
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com]
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com]
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com]
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com]
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com]
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com]
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com]
+
+TASK [Copy gluster_peer.sh script to nodes] ************************************
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "checksum": "79db875458ad5cfe637b5a6d30a9e1393461f8f0", "dest": "/tmp/gluster_peer.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_peer.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 499, "state": "file", "uid": 0}
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "checksum": "79db875458ad5cfe637b5a6d30a9e1393461f8f0", "dest": "/tmp/gluster_peer.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_peer.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 499, "state": "file", "uid": 0}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "checksum": "79db875458ad5cfe637b5a6d30a9e1393461f8f0", "dest": "/tmp/gluster_peer.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_peer.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 499, "state": "file", "uid": 0}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "checksum": "79db875458ad5cfe637b5a6d30a9e1393461f8f0", "dest": "/tmp/gluster_peer.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_peer.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 499, "state": "file", "uid": 0}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "checksum": "79db875458ad5cfe637b5a6d30a9e1393461f8f0", "dest": "/tmp/gluster_peer.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_peer.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 499, "state": "file", "uid": 0}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "checksum": "79db875458ad5cfe637b5a6d30a9e1393461f8f0", "dest": "/tmp/gluster_peer.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_peer.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 499, "state": "file", "uid": 0}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "checksum": "79db875458ad5cfe637b5a6d30a9e1393461f8f0", "dest": "/tmp/gluster_peer.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_peer.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 499, "state": "file", "uid": 0}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "checksum": "79db875458ad5cfe637b5a6d30a9e1393461f8f0", "dest": "/tmp/gluster_peer.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_peer.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 499, "state": "file", "uid": 0}
+
+TASK [Copy gluster_create.sh script to nodes] **********************************
+ok: [ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": false, "checksum": "e9564cea5635383d1ee04a8b24a39b72ceb59d8e", "dest": "/tmp/gluster_create.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_create.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 677, "state": "file", "uid": 0}
+ok: [ec2-54-175-80-99.compute-1.amazonaws.com] => {"changed": false, "checksum": "e9564cea5635383d1ee04a8b24a39b72ceb59d8e", "dest": "/tmp/gluster_create.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_create.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 677, "state": "file", "uid": 0}
+ok: [ec2-54-88-30-186.compute-1.amazonaws.com] => {"changed": false, "checksum": "e9564cea5635383d1ee04a8b24a39b72ceb59d8e", "dest": "/tmp/gluster_create.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_create.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 677, "state": "file", "uid": 0}
+ok: [ec2-54-172-0-231.compute-1.amazonaws.com] => {"changed": false, "checksum": "e9564cea5635383d1ee04a8b24a39b72ceb59d8e", "dest": "/tmp/gluster_create.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_create.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 677, "state": "file", "uid": 0}
+ok: [ec2-54-165-116-143.compute-1.amazonaws.com] => {"changed": false, "checksum": "e9564cea5635383d1ee04a8b24a39b72ceb59d8e", "dest": "/tmp/gluster_create.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_create.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 677, "state": "file", "uid": 0}
+ok: [ec2-54-209-35-174.compute-1.amazonaws.com] => {"changed": false, "checksum": "e9564cea5635383d1ee04a8b24a39b72ceb59d8e", "dest": "/tmp/gluster_create.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_create.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 677, "state": "file", "uid": 0}
+ok: [ec2-54-86-144-35.compute-1.amazonaws.com] => {"changed": false, "checksum": "e9564cea5635383d1ee04a8b24a39b72ceb59d8e", "dest": "/tmp/gluster_create.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_create.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 677, "state": "file", "uid": 0}
+ok: [ec2-54-165-254-213.compute-1.amazonaws.com] => {"changed": false, "checksum": "e9564cea5635383d1ee04a8b24a39b72ceb59d8e", "dest": "/tmp/gluster_create.sh", "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/gluster_create.sh", "secontext": "unconfined_u:object_r:user_home_t:s0", "size": 677, "state": "file", "uid": 0}
+
+TASK [Execute gluster_peer.sh script on nodes] *********************************
+changed: [ec2-54-209-35-103.compute-1.amazonaws.com -> ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/gluster_peer.sh", "delta": "0:00:00.078038", "end": "2016-01-19 09:52:58.084197", "rc": 0, "start": "2016-01-19 09:52:58.006159", "stderr": "", "stdout": "peer probe: success. Probe on localhost not needed\npeer probe: success. Host ec2-54-86-144-35.compute-1.amazonaws.com port 24007 already in peer list\npeer probe: success. Host ec2-54-175-80-99.compute-1.amazonaws.com port 24007 already in peer list\npeer probe: success. Host ec2-54-165-116-143.compute-1.amazonaws.com port 24007 already in peer list\npeer probe: success. Host ec2-54-209-35-174.compute-1.amazonaws.com port 24007 already in peer list\npeer probe: success. Host ec2-54-172-0-231.compute-1.amazonaws.com port 24007 already in peer list\npeer probe: success. Host ec2-54-88-30-186.compute-1.amazonaws.com port 24007 already in peer list\npeer probe: success. Host ec2-54-165-254-213.compute-1.amazonaws.com port 24007 already in peer list", "stdout_lines": ["peer probe: success. Probe on localhost not needed", "peer probe: success. Host ec2-54-86-144-35.compute-1.amazonaws.com port 24007 already in peer list", "peer probe: success. Host ec2-54-175-80-99.compute-1.amazonaws.com port 24007 already in peer list", "peer probe: success. Host ec2-54-165-116-143.compute-1.amazonaws.com port 24007 already in peer list", "peer probe: success. Host ec2-54-209-35-174.compute-1.amazonaws.com port 24007 already in peer list", "peer probe: success. Host ec2-54-172-0-231.compute-1.amazonaws.com port 24007 already in peer list", "peer probe: success. Host ec2-54-88-30-186.compute-1.amazonaws.com port 24007 already in peer list", "peer probe: success. Host ec2-54-165-254-213.compute-1.amazonaws.com port 24007 already in peer list"], "warnings": []}
+
+TASK [Execute gluster_create.sh script on nodes] *******************************
+changed: [ec2-54-209-35-103.compute-1.amazonaws.com -> ec2-54-209-35-103.compute-1.amazonaws.com] => {"changed": true, "cmd": "/tmp/gluster_create.sh", "delta": "0:00:00.011823", "end": "2016-01-19 09:52:58.468545", "rc": 0, "start": "2016-01-19 09:52:58.456722", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+
+PLAY RECAP *********************************************************************
+ec2-54-165-116-143.compute-1.amazonaws.com : ok=3    changed=0    unreachable=0    failed=0   
+ec2-54-165-254-213.compute-1.amazonaws.com : ok=3    changed=0    unreachable=0    failed=0   
+ec2-54-172-0-231.compute-1.amazonaws.com : ok=3    changed=0    unreachable=0    failed=0   
+ec2-54-175-80-99.compute-1.amazonaws.com : ok=3    changed=0    unreachable=0    failed=0   
+ec2-54-209-35-103.compute-1.amazonaws.com : ok=5    changed=2    unreachable=0    failed=0   
+ec2-54-209-35-174.compute-1.amazonaws.com : ok=3    changed=0    unreachable=0    failed=0   
+ec2-54-86-144-35.compute-1.amazonaws.com : ok=3    changed=0    unreachable=0    failed=0   
+ec2-54-88-30-186.compute-1.amazonaws.com : ok=3    changed=0    unreachable=0    failed=0   
+localhost                  : ok=5    changed=0    unreachable=0    failed=0   
+

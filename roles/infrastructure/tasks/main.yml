@@ -1,0 +1,5 @@
+---
+# tasks file for infrastructure
+- include: route53.yml
+- include: vpc.yml
+

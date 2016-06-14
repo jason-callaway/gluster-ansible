@@ -1,0 +1,8 @@
+{% for repo in repos %}
+[{{ repo }}]
+name={{ repo }}
+baseurl=http://{{ yum_private_dns_name }}/{{ repo }}
+gpgcheck=0
+enabled=0
+
+{% endfor %}

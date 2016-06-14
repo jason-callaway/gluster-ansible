@@ -1,0 +1,7 @@
+---
+- hosts: all
+  connection: ssh
+  gather_facts: no
+  become: true
+  roles:
+    - infrastructure

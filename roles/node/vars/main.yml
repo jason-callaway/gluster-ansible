@@ -1,0 +1,15 @@
+---
+# vars file for node
+cluster_id: gluster-demo
+
+# Currently only supports us-east-1
+ec2_region: us-east-1
+az_side_a: "{{ ec2_region }}a"
+az_side_b: "{{ ec2_region }}c"
+r53_zone: rhtps.io
+ec2_image: ami-0d28fe66
+
+yum_dns_name: "{{ cluster_id }}-yum"
+
+volume_type: gp2
+volume_size: 1

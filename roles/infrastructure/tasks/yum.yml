@@ -1,0 +1,124 @@
+---
+- ec2_vpc_subnet_facts:
+    filters:
+      "tag:Name": "{{ cluster_id }}-vpc"
+    region: "{{ ec2_region }}"
+  register: vpc_subnet
+
+- set_fact:
+    public_vpc_id: "{{ vpc_subnet.subnets[0].vpc_id }}"
+
+- set_fact:
+    public_subnet_id: "{{ vpc_subnet.subnets[0].id }}"
+
+- name: Create security group
+  ec2_group:
+    name: "{{ cluster_id }}-yum-sg"
+    description: "{{ cluster_id }} security group"
+    region: "{{ ec2_region }}"
+    vpc_id: "{{ public_vpc_id }}"
+    rules:
+      - proto: tcp
+        from_port: 22
+        to_port: 22
+        cidr_ip: 0.0.0.0/0
+      - proto: tcp
+        from_port: 80
+        to_port: 80
+        cidr_ip: 0.0.0.0/0
+    rules_egress:
+      - proto: all
+        cidr_ip: 0.0.0.0/0
+  register: security_group
+
+- name: Create ec2 instances
+  ec2:
+    image: "{{ ec2_image }}"
+    region: "{{ ec2_region }}"
+    key_name: "{{ ec2_keypair }}"
+    instance_type: "{{ ec2_instance_type }}"
+    group_id: "{{ security_group.group_id }}"
+    instance_tags:
+      Name: "{{ cluster_id }}-yum"
+      instance_role: "yum"
+      env: "{{ cluster_id }}"
+    exact_count: 1
+    count_tag:
+      Name: "{{ cluster_id }}-yum"
+      instance_role: "yum"
+      env: "{{ cluster_id }}"
+    wait: yes
+    volumes:
+      - volume_size: 10
+        device_type: gp2
+        device_name: /dev/sda1
+        delete_on_termination: True
+      - device_name: /dev/xvdb
+        device_type: gp2
+        volume_size: 40
+        delete_on_termination: True
+    assign_public_ip: yes
+    vpc_subnet_id: "{{ public_subnet_id }}"
+  register: ec2
+
+- set_fact:
+    ec2_instances:  "{{ ec2.instances }}"
+  when: ec2.instances is defined and ec2.instances
+
+- set_fact:
+    ec2_instances: "{{ ec2.tagged_instances }}"
+  when: ec2.tagged_instances is defined and ec2.tagged_instances
+
+- name: Wait for SSH to come up
+  wait_for: host={{ item.public_dns_name }} port=22 delay=0 timeout=600 state=started
+  with_items:
+    - "{{ ec2_instances }}"
+
+- name: Wait for successful SSH
+  command: "ssh -o StrictHostKeyChecking=no -o PasswordAuthentication=no -o ConnectTimeout=10 -o UserKnownHostsFile=/dev/null centos@{{ item.public_dns_name }} echo host is up"
+  with_items:
+    - "{{ ec2_instances }}"
+  register: result
+  until: result.rc == 0
+  retries: 60
+  delay: 10
+
+- name: save the yum server's private dns name
+  template: src=yum_vars.j2 dest=./roles/node/vars/yum.yml
+
+- name: Copy partition script
+  copy:
+    src: partition.sh
+    dest: /tmp/partition.sh
+    owner: root
+    mode: 0700
+
+- name: Execute the partition script
+  command: /tmp/partition.sh
+
+- name: Format EBS volume
+  filesystem:
+    fstype: ext4
+    dev: /dev/xvdb1
+
+- name: Make the data directory
+  file:
+    path: "/data"
+    state: directory
+    mode: 0755
+    recurse: yes
+
+- name: Mount the volume
+  mount:
+    name: "/data"
+    src: /dev/xvdb1
+    fstype: ext4
+    state: mounted
+
+- name: Make the docroot
+  file:
+    path: "/data/html"
+    state: directory
+    recurse: yes
+
+- name: make yum inventory file
