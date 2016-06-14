@@ -3,6 +3,7 @@
 if [ ${#} -ne 1 ]
 then
     echo "specify number of nodes per AZ"
+    exit 1
 fi
 
 printf "Refreshing EC2 cache (1 of 2)..."
